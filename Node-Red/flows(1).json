@@ -51,15 +51,6 @@
         "responsetimeout": "10"
     },
     {
-        "id": "1e63913.b5e0a6f",
-        "type": "ui_tab",
-        "name": "Übersicht",
-        "icon": "info",
-        "order": 1,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "ed5bac61b671b26e",
         "type": "ui_base",
         "theme": {
@@ -171,7 +162,7 @@
     {
         "id": "52cbbc12315fe777",
         "type": "ui_group",
-        "name": "Höchster Sonnenstand",
+        "name": "Sonnenhöchststand",
         "tab": "1e63913.b5e0a6f",
         "order": 4,
         "disp": true,
@@ -257,15 +248,6 @@
         "className": ""
     },
     {
-        "id": "eaf72d29c27d5532",
-        "type": "ui_tab",
-        "name": "Jalausie",
-        "icon": "dashboard",
-        "order": 2,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "d90c12143c2e28b4",
         "type": "ui_group",
         "name": "Windschutz",
@@ -321,15 +303,6 @@
         "className": ""
     },
     {
-        "id": "ab9dc87bc4361ffa",
-        "type": "ui_tab",
-        "name": "Sonnensegel",
-        "icon": "dashboard",
-        "order": 3,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "922b78cb649e46cb",
         "type": "ui_group",
         "name": "Windschutz",
@@ -374,15 +347,6 @@
         "className": ""
     },
     {
-        "id": "2038a0f4c400756e",
-        "type": "ui_tab",
-        "name": "Debug",
-        "icon": "build",
-        "order": 4,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "161e9e42bd0768fa",
         "type": "ui_group",
         "name": "Datei log.txt",
@@ -403,6 +367,42 @@
         "width": "6",
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "1e63913.b5e0a6f",
+        "type": "ui_tab",
+        "name": "Übersicht",
+        "icon": "info",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "eaf72d29c27d5532",
+        "type": "ui_tab",
+        "name": "Jalausie",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ab9dc87bc4361ffa",
+        "type": "ui_tab",
+        "name": "Sonnensegel",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2038a0f4c400756e",
+        "type": "ui_tab",
+        "name": "Debug",
+        "icon": "build",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
     },
     {
         "id": "c765b07b9b16ddfe",
@@ -2248,7 +2248,7 @@
         "type": "file",
         "z": "951993f4.8206d",
         "name": "AI_speedHighLimit write file",
-        "filename": "/home/pi/.node-red/context/Jalausie/AI_speedHighLimit.txt",
+        "filename": "~/.node-red/context/Jalausie/AI_speedHighLimit.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
@@ -2265,7 +2265,7 @@
         "type": "file in",
         "z": "951993f4.8206d",
         "name": "AI_speedHighLimit read file",
-        "filename": "/home/pi/.node-red/context/Jalausie/AI_speedHighLimit.txt",
+        "filename": "~/.node-red/context/Jalausie/AI_speedHighLimit.txt",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -2285,7 +2285,7 @@
         "type": "file in",
         "z": "951993f4.8206d",
         "name": "BV_WindMeasureActive read file",
-        "filename": "/home/pi/.node-red/context/Jalausie/BV_WindMeasureActive.txt",
+        "filename": "~/.node-red/context/Jalausie/BV_WindMeasureActive.txt",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -2329,7 +2329,7 @@
         "type": "file",
         "z": "951993f4.8206d",
         "name": "BV_WindMeasureActive write file",
-        "filename": "/home/pi/.node-red/context/Jalausie/BV_WindMeasureActive.txt",
+        "filename": "~/.node-red/context/Jalausie/BV_WindMeasureActive.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
@@ -2346,7 +2346,7 @@
         "type": "file in",
         "z": "951993f4.8206d",
         "name": "BV_RainActive read file",
-        "filename": "/home/pi/.node-red/context/Jalausie/BV_RainActive.txt",
+        "filename": "~/.node-red/context/Jalausie/BV_RainActive.txt",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -2366,7 +2366,7 @@
         "type": "file",
         "z": "951993f4.8206d",
         "name": "BV_RainActive write file",
-        "filename": "/home/pi/.node-red/context/Jalausie/BV_RainActive.txt",
+        "filename": "~/.node-red/context/Jalausie/BV_RainActive.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
@@ -2383,7 +2383,7 @@
         "type": "file in",
         "z": "951993f4.8206d",
         "name": "AV_RegenwahrscheinlichkeitLimit read file",
-        "filename": "/home/pi/.node-red/context/Jalausie/AV_RegenwahrscheinlichkeitLimit.txt",
+        "filename": "~/.node-red/context/Jalausie/AV_RegenwahrscheinlichkeitLimit.txt",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -2403,7 +2403,7 @@
         "type": "file",
         "z": "951993f4.8206d",
         "name": "AV_RegenwahrscheinlichkeitLimit write file",
-        "filename": "/home/pi/.node-red/context/Jalausie/AV_RegenwahrscheinlichkeitLimit.txt",
+        "filename": "~/.node-red/context/Jalausie/AV_RegenwahrscheinlichkeitLimit.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
@@ -2574,7 +2574,7 @@
         "type": "file in",
         "z": "951993f4.8206d",
         "name": "BV_ScheduleActive read file",
-        "filename": "/home/pi/.node-red/context/Jalausie/BV_ScheduleActive.txt",
+        "filename": "~/.node-red/context/Jalausie/BV_ScheduleActive.txt",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -2594,7 +2594,7 @@
         "type": "file",
         "z": "951993f4.8206d",
         "name": "BV_ScheduleActive write file",
-        "filename": "/home/pi/.node-red/context/Jalausie/BV_ScheduleActive.txt",
+        "filename": "~/.node-red/context/Jalausie/BV_ScheduleActive.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
@@ -2953,151 +2953,6 @@
         "wires": []
     },
     {
-        "id": "c5034eccb349c1f1",
-        "type": "file",
-        "z": "951993f4.8206d",
-        "name": "BV_SunActive write file",
-        "filename": "/home/pi/.node-red/context/Jalausie/BV_SunActive.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 1310,
-        "y": 2400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5ef765b4a912e823",
-        "type": "ui_dropdown",
-        "z": "951993f4.8206d",
-        "name": "",
-        "label": "Sonnenstand",
-        "tooltip": "Sonnenstand",
-        "place": "Select option",
-        "group": "3a1c8458509d8435",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "nicht aktiv",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "aktiv",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 990,
-        "y": 2500,
-        "wires": [
-            [
-                "3a4b030f7b31ce1e",
-                "c5034eccb349c1f1"
-            ]
-        ]
-    },
-    {
-        "id": "714cab5031b380ae",
-        "type": "function",
-        "z": "951993f4.8206d",
-        "name": "String to number",
-        "func": "flow.set('BV_SunActive', Number(msg.payload), 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 730,
-        "y": 2500,
-        "wires": [
-            [
-                "5ef765b4a912e823"
-            ]
-        ]
-    },
-    {
-        "id": "3a4b030f7b31ce1e",
-        "type": "function",
-        "z": "951993f4.8206d",
-        "name": "BV_SunActive",
-        "func": "flow.set('BV_SunActive', msg.payload, 'file');\nreturn msg;\n\n\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1300,
-        "y": 2480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7c250d872f5580d8",
-        "type": "file in",
-        "z": "951993f4.8206d",
-        "name": "BV_SunActive read file",
-        "filename": "/home/pi/.node-red/context/Jalausie/BV_SunActive.txt",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 420,
-        "y": 2500,
-        "wires": [
-            [
-                "714cab5031b380ae"
-            ]
-        ]
-    },
-    {
-        "id": "d9224ed037edac4b",
-        "type": "inject",
-        "z": "951993f4.8206d",
-        "name": "Once a time string",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "x": 150,
-        "y": 2500,
-        "wires": [
-            [
-                "7c250d872f5580d8",
-                "6e4aa236a0803dcb",
-                "4705bd5ac52b71bc"
-            ]
-        ]
-    },
-    {
         "id": "eafe9327d838895d",
         "type": "function",
         "z": "951993f4.8206d",
@@ -3187,7 +3042,7 @@
         "width": "",
         "height": "",
         "name": "solar_noon",
-        "label": "Höchster Sonnenstand",
+        "label": "Sonnenhöchststand",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
@@ -3294,366 +3149,6 @@
         ]
     },
     {
-        "id": "07edd35c5c0464f5",
-        "type": "function",
-        "z": "951993f4.8206d",
-        "name": "AV_ShadowAM",
-        "func": "let x = msg.payload;\nflow.set('AV_ShadowAM', x,'file');\nmsg.payload = x + \" %\";\nreturn msg;\n\n\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1320,
-        "y": 2640,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b6b2166c179ed6fc",
-        "type": "ui_slider",
-        "z": "951993f4.8206d",
-        "name": "Verschattung Vormittag in %",
-        "label": "Verschattung Vormittag in %",
-        "tooltip": "Verschattung Vormittag in %",
-        "group": "3a1c8458509d8435",
-        "order": 6,
-        "width": "",
-        "height": "",
-        "passthru": true,
-        "outs": "end",
-        "topic": "",
-        "topicType": "str",
-        "min": 0,
-        "max": "100",
-        "step": "5",
-        "className": "",
-        "x": 1040,
-        "y": 2580,
-        "wires": [
-            [
-                "07edd35c5c0464f5",
-                "9db085548506b544"
-            ]
-        ]
-    },
-    {
-        "id": "6e4aa236a0803dcb",
-        "type": "file in",
-        "z": "951993f4.8206d",
-        "name": "AV_ShadowAM read file",
-        "filename": "/home/pi/.node-red/context/Jalausie/AV_ShadowAM.txt",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 430,
-        "y": 2580,
-        "wires": [
-            [
-                "a1b0ceb0152a5225"
-            ]
-        ]
-    },
-    {
-        "id": "9db085548506b544",
-        "type": "file",
-        "z": "951993f4.8206d",
-        "name": "AV_ShadowAM write file",
-        "filename": "/home/pi/.node-red/context/Jalausie/AV_ShadowAM.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 1350,
-        "y": 2580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a1b0ceb0152a5225",
-        "type": "function",
-        "z": "951993f4.8206d",
-        "name": "String to number",
-        "func": "let x = Number(msg.payload);\nflow.set('AV_ShadowAM', x, 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 770,
-        "y": 2580,
-        "wires": [
-            [
-                "b6b2166c179ed6fc"
-            ]
-        ]
-    },
-    {
-        "id": "73abaafa7ee6732a",
-        "type": "function",
-        "z": "951993f4.8206d",
-        "name": "AV_ShadowPM",
-        "func": "let x = msg.payload;\nflow.set('AV_ShadowPM', x,'file');\nmsg.payload = x + \" %\";\nreturn msg;\n\n\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1320,
-        "y": 2780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5c132619fcdb1b44",
-        "type": "ui_slider",
-        "z": "951993f4.8206d",
-        "name": "Verschattung Nachmittag in %",
-        "label": "Verschattung Nachmittag in %",
-        "tooltip": "Verschattung Nachmittag in %",
-        "group": "3a1c8458509d8435",
-        "order": 8,
-        "width": "",
-        "height": "",
-        "passthru": true,
-        "outs": "end",
-        "topic": "",
-        "topicType": "str",
-        "min": 0,
-        "max": "100",
-        "step": "5",
-        "className": "",
-        "x": 1050,
-        "y": 2720,
-        "wires": [
-            [
-                "73abaafa7ee6732a",
-                "3e9e2fc6c203bd52"
-            ]
-        ]
-    },
-    {
-        "id": "4705bd5ac52b71bc",
-        "type": "file in",
-        "z": "951993f4.8206d",
-        "name": "AV_ShadowPM read file",
-        "filename": "/home/pi/.node-red/context/Jalausie/AV_ShadowPM.txt",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 430,
-        "y": 2720,
-        "wires": [
-            [
-                "a6309c87cd4de524"
-            ]
-        ]
-    },
-    {
-        "id": "3e9e2fc6c203bd52",
-        "type": "file",
-        "z": "951993f4.8206d",
-        "name": "AV_ShadowPM write file",
-        "filename": "/home/pi/.node-red/context/Jalausie/AV_ShadowPM.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 1350,
-        "y": 2720,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a6309c87cd4de524",
-        "type": "function",
-        "z": "951993f4.8206d",
-        "name": "String to number",
-        "func": "let x = Number(msg.payload);\nflow.set('AV_ShadowPM', x, 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 770,
-        "y": 2720,
-        "wires": [
-            [
-                "5c132619fcdb1b44"
-            ]
-        ]
-    },
-    {
-        "id": "ac4267afd218464c",
-        "type": "inject",
-        "z": "951993f4.8206d",
-        "name": "10s string",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "10",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "x": 210,
-        "y": 3380,
-        "wires": [
-            [
-                "4ea49b45cea7b318",
-                "edb6d27006115496",
-                "40994f37c744e374"
-            ]
-        ]
-    },
-    {
-        "id": "4ea49b45cea7b318",
-        "type": "function",
-        "z": "951993f4.8206d",
-        "name": "Calculate' BV_Sun",
-        "func": "var y = 0;\nvar active = flow.get('BV_SunActive', 'file');              \nvar timeNow = global.get('TimeMinute', 'file');             \nvar down = flow.get('AV_SunCalcDownTime', 'file');  \nvar up = flow.get('AV_SunCalcUpTime', 'file');  \n\n\n// Sun calcuculate  719 >= 807 - 217\nif (timeNow <= down || timeNow >= up) {\n     flow.set('BV_Sun', 0 ,'file');   \n     msg.payload ='<font size = 16><font color = blue>' + 'Oben';     \n} \nif (timeNow >= down && timeNow <= up ) {\n     flow.set('BV_Sun', 1 ,'file');   \n    msg.payload ='<font size = 16><font color = blue>' + 'Unten'; \n} \n// not active\nif (active === 0) {\n     flow.set('BV_Sun', 0 ,'file');   \n    msg.payload ='Funktion nicht aktiv!'; \n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 550,
-        "y": 3380,
-        "wires": [
-            [
-                "7bd5f517a8c3e427"
-            ]
-        ]
-    },
-    {
-        "id": "7bd5f517a8c3e427",
-        "type": "ui_text",
-        "z": "951993f4.8206d",
-        "group": "3a1c8458509d8435",
-        "order": 10,
-        "width": "",
-        "height": "",
-        "name": "",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 870,
-        "y": 3380,
-        "wires": []
-    },
-    {
-        "id": "edb6d27006115496",
-        "type": "function",
-        "z": "951993f4.8206d",
-        "name": "SunCalcDownTime",
-        "func": "\nvar percent = flow.get('AV_ShadowAM');\nvar during = global.get('solar_noonMinute') - global.get('SunriseMinute');\nduring = Math.trunc(during * (100 - percent) / 100);\n\n\n// time calculate down\nvar x = global.get('SunriseMinute') + during ;\nflow.set('AV_SunCalcDownTime',x, 'file');\nvar minute = x % 60;\nvar hour = (x - minute) / 60;\n\n\n// format time\nvar hourtext = 'text';\nif (hour > 9) {\n    hourtext = hour;\n}\nelse {\n    hourtext = '0' + hour;\n}\nif (minute > 9) {\n    msg.payload = '<font color= blue>' + hourtext + ':' + minute;\n}\nelse {\n    msg.payload = '<font color= blue>' + hourtext + ':0' + minute;\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 570,
-        "y": 3240,
-        "wires": [
-            [
-                "9314a1f41611a164"
-            ]
-        ]
-    },
-    {
-        "id": "9314a1f41611a164",
-        "type": "ui_text",
-        "z": "951993f4.8206d",
-        "group": "3a1c8458509d8435",
-        "order": 7,
-        "width": "",
-        "height": "",
-        "name": "SunCalcOnTime",
-        "label": "Berechnete Uhrzeit Ein",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 900,
-        "y": 3240,
-        "wires": []
-    },
-    {
-        "id": "40994f37c744e374",
-        "type": "function",
-        "z": "951993f4.8206d",
-        "name": "SunCalcUpTime",
-        "func": "\nvar percent = flow.get('AV_ShadowPM');\nvar during = global.get('SunsetMinute') - global.get('solar_noonMinute');\n\n//during = during*(percent)/100;\nduring = Math.trunc(during*percent / 100);\nflow.set('AV_DuringPM_Minute',during, 'file');\n\n// time calculate up\nvar x = global.get('solar_noonMinute') + during ;\nflow.set('AV_SunCalcUpTime',x, 'file');\nvar minute = x % 60;\nvar hour = (x - minute) / 60;\n\n// format time\nvar hourtext ='text';\nif (hour >9){\nhourtext = hour;\n}\nelse{\nhourtext = '0' + hour;\n}\nif (minute >9){\nmsg.payload = '<font color= blue>' + hourtext + ':' + minute;\n}\nelse{\nmsg.payload = '<font color= blue>' + hourtext + ':0' + minute;\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 3320,
-        "wires": [
-            [
-                "ab602fc9e429234d"
-            ]
-        ]
-    },
-    {
-        "id": "ab602fc9e429234d",
-        "type": "ui_text",
-        "z": "951993f4.8206d",
-        "group": "3a1c8458509d8435",
-        "order": 9,
-        "width": "",
-        "height": "",
-        "name": "SunCalc Off Time",
-        "label": "Berechnete Uhrzeit Aus",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 910,
-        "y": 3320,
-        "wires": []
-    },
-    {
         "id": "ba198516b43f5dfb",
         "type": "comment",
         "z": "951993f4.8206d",
@@ -3688,7 +3183,7 @@
         "type": "file",
         "z": "951993f4.8206d",
         "name": "Schedule write",
-        "filename": "/home/pi/.node-red/context/Jalausie/Schedule.txt",
+        "filename": "~/.node-red/context/Jalausie/Schedule.txt",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
@@ -3734,7 +3229,7 @@
         "type": "file in",
         "z": "951993f4.8206d",
         "name": "Schedule read",
-        "filename": "/home/pi/.node-red/context/Jalausie/Schedule.txt",
+        "filename": "~/.node-red/context/Jalausie/Schedule.txt",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -3755,10 +3250,10 @@
         "z": "951993f4.8206d",
         "group": "14ea130f6e6b7405",
         "name": "Zeitprogramm",
-        "startDay": "0",
+        "startDay": "1",
         "refresh": 60,
         "devices": [
-            "Sonnensegel"
+            "Jalausie"
         ],
         "singleOff": false,
         "onlySendChange": false,
@@ -3896,7 +3391,7 @@
         "type": "function",
         "z": "951993f4.8206d",
         "name": "y101/y102 Up and Down",
-        "func": "// y101->Up\n// y102 -> Down\nvar oldPayload = flow.get('OldPayload');\nvar order = 0;\n\n// alarm\nvar alarm1 = Number(flow.get('BV_RainAlarm'));\nvar alarm2 = Number(flow.get('BV_WindAlarm'));\n\n// sun function\nvar x1 = Number(flow.get('BV_Sun'));\n// schedule  function\nvar x2 = Number(flow.get('BV_Schedule'));\n\n// Down\nif ((x1 === 1 || x2 === 1) && alarm1 == 0 && alarm2 == 0 ) {\n     order = 1;\n}\nelse{\n//Up\n     order = 0;\n}\n\nvar Stamp1Down = 0;\nvar Duration1Down = 0;\nvar Stamp1Up = 0;\nvar Duration1Up = 0;\nvar time1 = 10000; // ms\nvar time2 = 70000; // ms\nvar time3 = 72000000; // ms 2 hours\n\n\nif(order === 1)          // Down\n{\n     flow.set('Stamp1Up', Date.now());\n     // wait 10s\n     Stamp1Down = flow.get('Stamp1Down');\n     Duration1Down = Date.now() - Stamp1Down; \n     flow.set('Duration1Down', Duration1Down);\n\n     if (Duration1Down < time1){\n          msg.payload = \"y101:0\";\n     }\n     if (Duration1Down < time2 && Duration1Down > time1) {\n          msg.payload = \"y102:1\";\n     }\n     if (Duration1Down < time3 && Duration1Down > time2) {\n          msg.payload = \"y102:0\";\n     }     \n}\n\nif (order === 0)       // Up\n{\n     flow.set('Stamp1Down', Date.now());\n     //wait 10s\n     Stamp1Up = Number(flow.get('Stamp1Up'));\n     Duration1Up = Date.now() - Stamp1Up;\n     flow.set('Duration1Up', Duration1Up);\n     if (Duration1Up < time1) {\n          msg.payload = \"y102:0\";\n     }\n     if (Duration1Up < time2 && Duration1Up > time1) {\n          msg.payload = \"y101:1\";\n     }\n     // wait 60s Motorlaufzeit\n     if (Duration1Up < time3 && Duration1Up > time2 ) {\n          msg.payload = \"y101:0\";          \n     }\n     // wait 1h repeat alarm\n     if (Duration1Up > time3 &&(alarm1 == 1 || alarm2 == 1)) {\n       flow.set('Stamp1Down', Date.now());  \n       flow.set('Stamp1Up', Date.now());\n     }\n}\nif (oldPayload !== msg.payload) {\n     flow.set('OldPayload', msg.payload);\n     return msg;\n}\n\n\n\n\n\n\n\n",
+        "func": "// y101->Up\n// y102 -> Down\nvar oldPayload = flow.get('OldPayload');\nvar order = 0;\n\n// alarm\nvar alarm1 = Number(flow.get('BV_RainAlarm'));\nvar alarm2 = Number(flow.get('BV_WindAlarm'));\n\n// schedule  function\nvar x = Number(flow.get('BV_Schedule'));\n\n// Down\nif ( x === 1 && alarm1 == 0 && alarm2 == 0 ) {\n     order = 1;\n}\nelse{\n//Up\n     order = 0;\n}\n\nvar Stamp1Down = 0;\nvar Duration1Down = 0;\nvar Stamp1Up = 0;\nvar Duration1Up = 0;\nvar time1 = 10000; // ms\nvar time2 = 70000; // ms\nvar time3 = 72000000; // ms 2 hours\n\n\nif(order === 1)          // Down\n{\n     flow.set('Stamp1Up', Date.now());\n     // wait 10s\n     Stamp1Down = flow.get('Stamp1Down');\n     Duration1Down = Date.now() - Stamp1Down; \n     flow.set('Duration1Down', Duration1Down);\n\n     if (Duration1Down < time1){\n          msg.payload = \"y101:0\";\n     }\n     if (Duration1Down < time2 && Duration1Down > time1) {\n          msg.payload = \"y102:1\";\n     }\n     if (Duration1Down < time3 && Duration1Down > time2) {\n          msg.payload = \"y102:0\";\n     }     \n}\n\nif (order === 0)       // Up\n{\n     flow.set('Stamp1Down', Date.now());\n     //wait 10s\n     Stamp1Up = Number(flow.get('Stamp1Up'));\n     Duration1Up = Date.now() - Stamp1Up;\n     flow.set('Duration1Up', Duration1Up);\n     if (Duration1Up < time1) {\n          msg.payload = \"y102:0\";\n     }\n     if (Duration1Up < time2 && Duration1Up > time1) {\n          msg.payload = \"y101:1\";\n     }\n     // wait 60s Motorlaufzeit\n     if (Duration1Up < time3 && Duration1Up > time2 ) {\n          msg.payload = \"y101:0\";          \n     }\n     // wait 1h repeat alarm\n     if (Duration1Up > time3 &&(alarm1 == 1 || alarm2 == 1)) {\n       flow.set('Stamp1Down', Date.now());  \n       flow.set('Stamp1Up', Date.now());\n     }\n}\nif (oldPayload !== msg.payload) {\n     flow.set('OldPayload', msg.payload);\n     return msg;\n}\n\n\n\n\n\n\n\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -3963,7 +3458,7 @@
         "type": "file",
         "z": "951993f4.8206d",
         "name": "Log write file",
-        "filename": "/home/pi/.node-red/context/Log.txt",
+        "filename": "~/.node-red/context/Log.txt",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
@@ -4000,7 +3495,7 @@
         "type": "file",
         "z": "951993f4.8206d",
         "name": "Log write file",
-        "filename": "/home/pi/.node-red/context/Log.txt",
+        "filename": "~/.node-red/context/Log.txt",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
@@ -4504,7 +3999,7 @@
         "type": "file",
         "z": "812b0ff61703e7f7",
         "name": "AI_speedHighLimit write file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/AI_speedHighLimit.txt",
+        "filename": "~/.node-red/context/Sonnensegel/AI_speedHighLimit.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
@@ -4521,7 +4016,7 @@
         "type": "file in",
         "z": "812b0ff61703e7f7",
         "name": "AI_speedHighLimit read file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/AI_speedHighLimit.txt",
+        "filename": "~/.node-red/context/Sonnensegel/AI_speedHighLimit.txt",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -4541,7 +4036,7 @@
         "type": "file in",
         "z": "812b0ff61703e7f7",
         "name": "BV_WindMeasureActive read file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/BV_WindMeasureActive.txt",
+        "filename": "~/.node-red/context/Sonnensegel/BV_WindMeasureActive.txt",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -4591,7 +4086,7 @@
         "type": "file",
         "z": "812b0ff61703e7f7",
         "name": "BV_WindMeasureActive write file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/BV_WindMeasureActive.txt",
+        "filename": "~/.node-red/context/Sonnensegel/BV_WindMeasureActive.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
@@ -4608,7 +4103,7 @@
         "type": "file in",
         "z": "812b0ff61703e7f7",
         "name": "BV_RainActive read file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/BV_RainActive.txt",
+        "filename": "~/.node-red/context/Sonnensegel/BV_RainActive.txt",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -4628,7 +4123,7 @@
         "type": "file",
         "z": "812b0ff61703e7f7",
         "name": "BV_RainActive write file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/BV_RainActive.txt",
+        "filename": "~/.node-red/context/Sonnensegel/BV_RainActive.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
@@ -4645,7 +4140,7 @@
         "type": "file in",
         "z": "812b0ff61703e7f7",
         "name": "AV_RegenwahrscheinlichkeitLimit read file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/AV_RegenwahrscheinlichkeitLimit.txt",
+        "filename": "~/.node-red/context/Sonnensegel/AV_RegenwahrscheinlichkeitLimit.txt",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -4665,7 +4160,7 @@
         "type": "file",
         "z": "812b0ff61703e7f7",
         "name": "AV_RegenwahrscheinlichkeitLimit write file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/AV_RegenwahrscheinlichkeitLimit.txt",
+        "filename": "~/.node-red/context/Sonnensegel/AV_RegenwahrscheinlichkeitLimit.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
@@ -4846,7 +4341,7 @@
         "type": "file in",
         "z": "812b0ff61703e7f7",
         "name": "BV_ScheduleActive read file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/BV_ScheduleActive.txt",
+        "filename": "~/.node-red/context/Sonnensegel/BV_ScheduleActive.txt",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -4866,7 +4361,7 @@
         "type": "file",
         "z": "812b0ff61703e7f7",
         "name": "BV_ScheduleActive write file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/BV_ScheduleActive.txt",
+        "filename": "~/.node-red/context/Sonnensegel/BV_ScheduleActive.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
@@ -5221,151 +4716,6 @@
         "wires": []
     },
     {
-        "id": "63712dc4e7b6f9f2",
-        "type": "file",
-        "z": "812b0ff61703e7f7",
-        "name": "BV_SunActive write file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/BV_SunActive.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 1310,
-        "y": 2400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "52d1be8d04c9b538",
-        "type": "ui_dropdown",
-        "z": "812b0ff61703e7f7",
-        "name": "",
-        "label": "Sonnenstand",
-        "tooltip": "Sonnenstand",
-        "place": "Select option",
-        "group": "d44f1d1e25036908",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "nicht aktiv",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "aktiv",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 990,
-        "y": 2500,
-        "wires": [
-            [
-                "af1da47e1518a9f0",
-                "63712dc4e7b6f9f2"
-            ]
-        ]
-    },
-    {
-        "id": "a4404d2b05c1add8",
-        "type": "function",
-        "z": "812b0ff61703e7f7",
-        "name": "String to number",
-        "func": "flow.set('BV_SunActive', Number(msg.payload), 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 730,
-        "y": 2500,
-        "wires": [
-            [
-                "52d1be8d04c9b538"
-            ]
-        ]
-    },
-    {
-        "id": "af1da47e1518a9f0",
-        "type": "function",
-        "z": "812b0ff61703e7f7",
-        "name": "BV_SunActive",
-        "func": "flow.set('BV_SunActive', msg.payload, 'file');\nreturn msg;\n\n\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1300,
-        "y": 2480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a162db6c25aec528",
-        "type": "file in",
-        "z": "812b0ff61703e7f7",
-        "name": "BV_SunActive read file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/BV_SunActive.txt",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 420,
-        "y": 2500,
-        "wires": [
-            [
-                "a4404d2b05c1add8"
-            ]
-        ]
-    },
-    {
-        "id": "9096b196dacb6e43",
-        "type": "inject",
-        "z": "812b0ff61703e7f7",
-        "name": "Once a time string",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "x": 150,
-        "y": 2500,
-        "wires": [
-            [
-                "a162db6c25aec528",
-                "3d20ea9263a3c8f2",
-                "1969959927c1122d"
-            ]
-        ]
-    },
-    {
         "id": "3498428819356a69",
         "type": "function",
         "z": "812b0ff61703e7f7",
@@ -5455,7 +4805,7 @@
         "width": "",
         "height": "",
         "name": "solar_noon",
-        "label": "Höchster Sonnenstand",
+        "label": "Sonnenhöchststand",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
@@ -5562,366 +4912,6 @@
         ]
     },
     {
-        "id": "8fd52e78946c0b83",
-        "type": "function",
-        "z": "812b0ff61703e7f7",
-        "name": "AV_ShadowAM",
-        "func": "let x = msg.payload;\nflow.set('AV_ShadowAM', x,'file');\nmsg.payload = x + \" %\";\nreturn msg;\n\n\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1320,
-        "y": 2640,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7a0c8e71e2bf968f",
-        "type": "ui_slider",
-        "z": "812b0ff61703e7f7",
-        "name": "Verschattung Vormittag in %",
-        "label": "Verschattung Vormittag in %",
-        "tooltip": "Verschattung Vormittag in %",
-        "group": "d44f1d1e25036908",
-        "order": 6,
-        "width": "",
-        "height": "",
-        "passthru": true,
-        "outs": "end",
-        "topic": "",
-        "topicType": "str",
-        "min": 0,
-        "max": "100",
-        "step": "5",
-        "className": "",
-        "x": 1040,
-        "y": 2580,
-        "wires": [
-            [
-                "8fd52e78946c0b83",
-                "e4edfa2b20bda18e"
-            ]
-        ]
-    },
-    {
-        "id": "3d20ea9263a3c8f2",
-        "type": "file in",
-        "z": "812b0ff61703e7f7",
-        "name": "AV_ShadowAM read file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/AV_ShadowAM.txt",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 430,
-        "y": 2580,
-        "wires": [
-            [
-                "ccbe792632b092db"
-            ]
-        ]
-    },
-    {
-        "id": "e4edfa2b20bda18e",
-        "type": "file",
-        "z": "812b0ff61703e7f7",
-        "name": "AV_ShadowAM write file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/AV_ShadowAM.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 1350,
-        "y": 2580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ccbe792632b092db",
-        "type": "function",
-        "z": "812b0ff61703e7f7",
-        "name": "String to number",
-        "func": "let x = Number(msg.payload);\nflow.set('AV_ShadowAM', x, 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 770,
-        "y": 2580,
-        "wires": [
-            [
-                "7a0c8e71e2bf968f"
-            ]
-        ]
-    },
-    {
-        "id": "bd3901082b96a5e0",
-        "type": "function",
-        "z": "812b0ff61703e7f7",
-        "name": "AV_ShadowPM",
-        "func": "let x = msg.payload;\nflow.set('AV_ShadowPM', x,'file');\nmsg.payload = x + \" %\";\nreturn msg;\n\n\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1320,
-        "y": 2780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "071cb315ccd5d26f",
-        "type": "ui_slider",
-        "z": "812b0ff61703e7f7",
-        "name": "Verschattung Nachmittag in %",
-        "label": "Verschattung Nachmittag in %",
-        "tooltip": "Verschattung Nachmittag in %",
-        "group": "d44f1d1e25036908",
-        "order": 8,
-        "width": "",
-        "height": "",
-        "passthru": true,
-        "outs": "end",
-        "topic": "",
-        "topicType": "str",
-        "min": 0,
-        "max": "100",
-        "step": "5",
-        "className": "",
-        "x": 1050,
-        "y": 2720,
-        "wires": [
-            [
-                "bd3901082b96a5e0",
-                "c1058247c7f22095"
-            ]
-        ]
-    },
-    {
-        "id": "1969959927c1122d",
-        "type": "file in",
-        "z": "812b0ff61703e7f7",
-        "name": "AV_ShadowPM read file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/AV_ShadowPM.txt",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 430,
-        "y": 2720,
-        "wires": [
-            [
-                "e27e51c6e980c584"
-            ]
-        ]
-    },
-    {
-        "id": "c1058247c7f22095",
-        "type": "file",
-        "z": "812b0ff61703e7f7",
-        "name": "AV_ShadowPM write file",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/AV_ShadowPM.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 1350,
-        "y": 2720,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e27e51c6e980c584",
-        "type": "function",
-        "z": "812b0ff61703e7f7",
-        "name": "String to number",
-        "func": "let x = Number(msg.payload);\nflow.set('AV_ShadowPM', x, 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 770,
-        "y": 2720,
-        "wires": [
-            [
-                "071cb315ccd5d26f"
-            ]
-        ]
-    },
-    {
-        "id": "4ea780268cd7e591",
-        "type": "inject",
-        "z": "812b0ff61703e7f7",
-        "name": "10s string",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "10",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "x": 210,
-        "y": 3380,
-        "wires": [
-            [
-                "8f2440c9a531c0ce",
-                "e1b3550de1c4819b",
-                "8a57034dfb7a2ffa"
-            ]
-        ]
-    },
-    {
-        "id": "8f2440c9a531c0ce",
-        "type": "function",
-        "z": "812b0ff61703e7f7",
-        "name": "Calculate' BV_Sun",
-        "func": "var y = 0;\nvar active = flow.get('BV_SunActive', 'file');              \nvar timeNow = global.get('TimeMinute', 'file');             \nvar down = flow.get('AV_SunCalcDownTime', 'file');  \nvar up = flow.get('AV_SunCalcUpTime', 'file');  \n\n\n// Sun calcuculate  719 >= 807 - 217\nif (timeNow <= down || timeNow >= up) {\n     flow.set('BV_Sun', 0 ,'file');   \n     msg.payload ='<font size = 16><font color = blue>' + 'Oben';     \n} \nif (timeNow >= down && timeNow <= up ) {\n     flow.set('BV_Sun', 1 ,'file');   \n    msg.payload ='<font size = 16><font color = blue>' + 'Unten'; \n} \n// not active\nif (active === 0) {\n     flow.set('BV_Sun', 0 ,'file');   \n    msg.payload ='Funktion nicht aktiv!'; \n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 550,
-        "y": 3380,
-        "wires": [
-            [
-                "eef0e68809d6f411"
-            ]
-        ]
-    },
-    {
-        "id": "eef0e68809d6f411",
-        "type": "ui_text",
-        "z": "812b0ff61703e7f7",
-        "group": "d44f1d1e25036908",
-        "order": 10,
-        "width": "",
-        "height": "",
-        "name": "",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 870,
-        "y": 3380,
-        "wires": []
-    },
-    {
-        "id": "e1b3550de1c4819b",
-        "type": "function",
-        "z": "812b0ff61703e7f7",
-        "name": "SunCalcDownTime",
-        "func": "\nvar percent = flow.get('AV_ShadowAM');\nvar during = global.get('solar_noonMinute') - global.get('SunriseMinute');\nduring = Math.trunc(during * (100 - percent) / 100);\n\n\n// time calculate down\nvar x = global.get('SunriseMinute') + during ;\nflow.set('AV_SunCalcDownTime',x, 'file');\nvar minute = x % 60;\nvar hour = (x - minute) / 60;\n\n\n// format time\nvar hourtext = 'text';\nif (hour > 9) {\n    hourtext = hour;\n}\nelse {\n    hourtext = '0' + hour;\n}\nif (minute > 9) {\n    msg.payload = '<font color= blue>' + hourtext + ':' + minute;\n}\nelse {\n    msg.payload = '<font color= blue>' + hourtext + ':0' + minute;\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 570,
-        "y": 3240,
-        "wires": [
-            [
-                "48d744b9d4941c46"
-            ]
-        ]
-    },
-    {
-        "id": "48d744b9d4941c46",
-        "type": "ui_text",
-        "z": "812b0ff61703e7f7",
-        "group": "d44f1d1e25036908",
-        "order": 7,
-        "width": "",
-        "height": "",
-        "name": "SunCalcOnTime",
-        "label": "Berechnete Uhrzeit Ein",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 900,
-        "y": 3240,
-        "wires": []
-    },
-    {
-        "id": "8a57034dfb7a2ffa",
-        "type": "function",
-        "z": "812b0ff61703e7f7",
-        "name": "SunCalcUpTime",
-        "func": "\nvar percent = flow.get('AV_ShadowPM');\nvar during = global.get('SunsetMinute') - global.get('solar_noonMinute');\n\n//during = during*(percent)/100;\nduring = Math.trunc(during*percent / 100);\nflow.set('AV_DuringPM_Minute',during, 'file');\n\n// time calculate up\nvar x = global.get('solar_noonMinute') + during ;\nflow.set('AV_SunCalcUpTime',x, 'file');\nvar minute = x % 60;\nvar hour = (x - minute) / 60;\n\n// format time\nvar hourtext ='text';\nif (hour >9){\nhourtext = hour;\n}\nelse{\nhourtext = '0' + hour;\n}\nif (minute >9){\nmsg.payload = '<font color= blue>' + hourtext + ':' + minute;\n}\nelse{\nmsg.payload = '<font color= blue>' + hourtext + ':0' + minute;\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 3320,
-        "wires": [
-            [
-                "7d29637b3cea99dd"
-            ]
-        ]
-    },
-    {
-        "id": "7d29637b3cea99dd",
-        "type": "ui_text",
-        "z": "812b0ff61703e7f7",
-        "group": "d44f1d1e25036908",
-        "order": 9,
-        "width": "",
-        "height": "",
-        "name": "SunCalc Off Time",
-        "label": "Berechnete Uhrzeit Aus",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 910,
-        "y": 3320,
-        "wires": []
-    },
-    {
         "id": "0f3392e0ba16f56e",
         "type": "comment",
         "z": "812b0ff61703e7f7",
@@ -6025,7 +5015,7 @@
         "type": "file",
         "z": "812b0ff61703e7f7",
         "name": "Schedule write",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/Schedule.txt",
+        "filename": "~/.node-red/context/Sonnensegel/Schedule.txt",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
@@ -6071,7 +5061,7 @@
         "type": "file in",
         "z": "812b0ff61703e7f7",
         "name": "Schedule read",
-        "filename": "/home/pi/.node-red/context/Sonnensegel/Schedule.txt",
+        "filename": "~/.node-red/context/Sonnensegel/Schedule.txt",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -6092,7 +5082,7 @@
         "z": "812b0ff61703e7f7",
         "group": "54566316ec606040",
         "name": "Zeitprogramm",
-        "startDay": "0",
+        "startDay": "1",
         "refresh": 60,
         "devices": [
             "Sonnensegel"
@@ -6136,7 +5126,7 @@
         "type": "function",
         "z": "812b0ff61703e7f7",
         "name": "y103/y104 Up and Down",
-        "func": "// y103->Up\n// y104 -> Down\nvar oldPayload = flow.get('OldPayload');\nvar order = 0;\n\n// alarm\nvar alarm1 = Number(flow.get('BV_RainAlarm'));\nvar alarm2 = Number(flow.get('BV_WindAlarm'));\n\n// sun function\nvar x1 = Number(flow.get('BV_Sun'));\n// schedule  function\nvar x2 = Number(flow.get('BV_Schedule'));\n\n// Down\nif ((x1 === 1 || x2 === 1) && alarm1 == 0 && alarm2 == 0 ) {\n     order = 1;\n}\nelse{\n//Up\n     order = 0;\n}\n\nvar Stamp1Down = 0;\nvar Duration1Down = 0;\nvar Stamp1Up = 0;\nvar Duration1Up = 0;\nvar time1 = 10000; // ms\nvar time2 = 70000; // ms\nvar time3 = 7200000; // ms 2 hours\n\n\nif(order === 1)          // Down\n{\n     flow.set('Stamp1Up', Date.now());\n     // wait 10s\n     Stamp1Down = flow.get('Stamp1Down');\n     Duration1Down = Date.now() - Stamp1Down; \n     flow.set('Duration1Down', Duration1Down);\n\n     if (Duration1Down < time1){\n          msg.payload = \"y103:0\";\n     }\n     if (Duration1Down < time2 && Duration1Down > time1) {\n          msg.payload = \"y104:1\";\n     }\n     if (Duration1Down < time3 && Duration1Down > time2) {\n          msg.payload = \"y104:0\";\n     }\n}\n\nif (order === 0)       // Up\n{\n     flow.set('Stamp1Down', Date.now());\n     //wait 10s\n     Stamp1Up = Number(flow.get('Stamp1Up'));\n     Duration1Up = Date.now() - Stamp1Up;\n     flow.set('Duration1Up', Duration1Up);\n     if (Duration1Up < time1) {\n          msg.payload = \"y104:0\";\n     }\n     if (Duration1Up < time2 && Duration1Up > time1) {\n          msg.payload = \"y103:1\";\n     }\n     // wait 60s Motorlaufzeit\n     if (Duration1Up < time3 && Duration1Up > time2 ) {\n          msg.payload = \"y103:0\";\n          \n     }\n     // wait 1h repeat alarm\n     if (Duration1Up > time3 &&(alarm1 == 1 || alarm2 == 1)) {\n       flow.set('Stamp1Down', Date.now());  \n       flow.set('Stamp1Up', Date.now());\n     }\n}\nif (oldPayload !== msg.payload) {\n     flow.set('OldPayload', msg.payload);\n     return msg;\n}\n\n\n\n\n\n\n\n",
+        "func": "// y103->Up\n// y104 -> Down\nvar oldPayload = flow.get('OldPayload');\nvar order = 0;\n\n// alarm\nvar alarm1 = Number(flow.get('BV_RainAlarm'));\nvar alarm2 = Number(flow.get('BV_WindAlarm'));\n\n// schedule  function\nvar x = Number(flow.get('BV_Schedule'));\n\n// Down\nif ( x === 1 && alarm1 == 0 && alarm2 == 0 ) {\n     order = 1;\n}\nelse{\n//Up\n     order = 0;\n}\n\nvar Stamp1Down = 0;\nvar Duration1Down = 0;\nvar Stamp1Up = 0;\nvar Duration1Up = 0;\nvar time1 = 10000; // ms\nvar time2 = 70000; // ms\nvar time3 = 7200000; // ms 2 hours\n\n\nif(order === 1)          // Down\n{\n     flow.set('Stamp1Up', Date.now());\n     // wait 10s\n     Stamp1Down = flow.get('Stamp1Down');\n     Duration1Down = Date.now() - Stamp1Down; \n     flow.set('Duration1Down', Duration1Down);\n\n     if (Duration1Down < time1){\n          msg.payload = \"y103:0\";\n     }\n     if (Duration1Down < time2 && Duration1Down > time1) {\n          msg.payload = \"y104:1\";\n     }\n     if (Duration1Down < time3 && Duration1Down > time2) {\n          msg.payload = \"y104:0\";\n     }\n}\n\nif (order === 0)       // Up\n{\n     flow.set('Stamp1Down', Date.now());\n     //wait 10s\n     Stamp1Up = Number(flow.get('Stamp1Up'));\n     Duration1Up = Date.now() - Stamp1Up;\n     flow.set('Duration1Up', Duration1Up);\n     if (Duration1Up < time1) {\n          msg.payload = \"y104:0\";\n     }\n     if (Duration1Up < time2 && Duration1Up > time1) {\n          msg.payload = \"y103:1\";\n     }\n     // wait 60s Motorlaufzeit\n     if (Duration1Up < time3 && Duration1Up > time2 ) {\n          msg.payload = \"y103:0\";\n          \n     }\n     // wait 1h repeat alarm\n     if (Duration1Up > time3 &&(alarm1 == 1 || alarm2 == 1)) {\n       flow.set('Stamp1Down', Date.now());  \n       flow.set('Stamp1Up', Date.now());\n     }\n}\nif (oldPayload !== msg.payload) {\n     flow.set('OldPayload', msg.payload);\n     return msg;\n}\n\n\n\n\n\n\n\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -6241,7 +5231,7 @@
         "type": "file",
         "z": "812b0ff61703e7f7",
         "name": "Log write file",
-        "filename": "/home/pi/.node-red/context/Log.txt",
+        "filename": "~/.node-red/context/Log.txt",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
@@ -6278,7 +5268,7 @@
         "type": "file",
         "z": "812b0ff61703e7f7",
         "name": "Log write file",
-        "filename": "/home/pi/.node-red/context/Log.txt",
+        "filename": "~/.node-red/context/Log.txt",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
@@ -6367,7 +5357,7 @@
         "type": "file",
         "z": "b58df928500ccc77",
         "name": "Delete Log file",
-        "filename": "/home/pi/.node-red/context/Log.txt",
+        "filename": "~/.node-red/context/Log.txt",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
@@ -6406,14 +5396,14 @@
         "type": "file in",
         "z": "b58df928500ccc77",
         "name": "",
-        "filename": "/home/pi/.node-red/context/Log.txt",
+        "filename": "~/.node-red/context/Log.txt",
         "filenameType": "str",
         "format": "lines",
         "chunk": false,
         "sendError": false,
         "encoding": "none",
         "allProps": true,
-        "x": 840,
+        "x": 820,
         "y": 680,
         "wires": [
             [
@@ -6507,7 +5497,7 @@
         "type": "file",
         "z": "b58df928500ccc77",
         "name": "Log write file",
-        "filename": "/home/pi/.node-red/context/Log.txt",
+        "filename": "~/.node-red/context/Log.txt",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
@@ -6592,7 +5582,7 @@
         "type": "file in",
         "z": "b58df928500ccc77",
         "name": "Testbetrieb",
-        "filename": "/home/pi/.node-red/context/Testbetrieb.txt",
+        "filename": "~/.node-red/context/Testbetrieb.txt",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -6612,7 +5602,7 @@
         "type": "file",
         "z": "b58df928500ccc77",
         "name": "Testbetrieb",
-        "filename": "/home/pi/.node-red/context/Testbetrieb.txt",
+        "filename": "~/.node-red/context/Testbetrieb.txt",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
@@ -6756,7 +5746,7 @@
         "type": "file",
         "z": "b58df928500ccc77",
         "name": "Log write file",
-        "filename": "/home/pi/.node-red/context/Log.txt",
+        "filename": "~/.node-red/context/Log.txt",
         "filenameType": "str",
         "appendNewline": true,
         "createDir": true,
