@@ -1,0 +1,5809 @@
+[
+    {
+        "id": "53e94bf09e2eba1c",
+        "type": "tab",
+        "label": "Main",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f3786f090d92b22a",
+        "type": "tab",
+        "label": "Übersicht",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2e9072eeb23d4182",
+        "type": "tab",
+        "label": "Jalausie",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e6e3b345539f4e42",
+        "type": "tab",
+        "label": "Sonnensegel",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cc9ee972c72288e8",
+        "type": "tab",
+        "label": "Debug",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "90f9ec1d.3035a",
+        "type": "serial-port",
+        "serialport": "/dev/ttyACM0",
+        "serialbaud": "57600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10"
+    },
+    {
+        "id": "ed5bac61b671b26e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#a9df9c",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#a9df9c",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#a9df9c",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#e3f5de",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#c8d8c4",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#c8d8c4",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#a9df9c",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#a9df9c",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#a9df9c",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Sun",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD.MM.YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "dd6696f7cc452fd8",
+        "type": "ui_group",
+        "name": "Sonnenaufgang",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "52cbbc12315fe777",
+        "type": "ui_group",
+        "name": "Höchster Sonnenstand",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "afc6ba1da50fe30f",
+        "type": "ui_group",
+        "name": "Sonnenuntergang",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "956a7397bc0e915e",
+        "type": "ui_group",
+        "name": "Datum",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5c960cfb609cc93c",
+        "type": "ui_group",
+        "name": "Aussentemperatur",
+        "tab": "",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0d643f19a234b1e3",
+        "type": "ui_group",
+        "name": "Windgeschwindigkeit",
+        "tab": "",
+        "order": 7,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e8347c42c79e06a8",
+        "type": "ui_group",
+        "name": "Regenwahrscheinlichkeit",
+        "tab": "",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1ca180f72b81918c",
+        "type": "ui_group",
+        "name": "Luftfeuchtigkeit",
+        "tab": "",
+        "order": 10,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f513320a4481d386",
+        "type": "ui_group",
+        "name": "Niederschlag",
+        "tab": "",
+        "order": 9,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d90c12143c2e28b4",
+        "type": "ui_group",
+        "name": "Windschutz",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6752cf8bb4d6264e",
+        "type": "ui_group",
+        "name": "Uhrzeit",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f38a2925ce1a334a",
+        "type": "ui_group",
+        "name": "Niederschlagschutz",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "14ea130f6e6b7405",
+        "type": "ui_group",
+        "name": "Zeitprogramm",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3a1c8458509d8435",
+        "type": "ui_group",
+        "name": "Sonnenstand",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "922b78cb649e46cb",
+        "type": "ui_group",
+        "name": "Windschutz",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7931605bd60b47a1",
+        "type": "ui_group",
+        "name": "Niederschlagschutz",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "54566316ec606040",
+        "type": "ui_group",
+        "name": "Zeitprogramm",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d44f1d1e25036908",
+        "type": "ui_group",
+        "name": "Sonnenstand",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "161e9e42bd0768fa",
+        "type": "ui_group",
+        "name": "Datei log.txt",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ef88dac95fd5e728",
+        "type": "ui_group",
+        "name": "Allgemein",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2912a79a73763eb2",
+        "type": "ui_tab",
+        "name": "Übersicht",
+        "icon": "info",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1e6a5a4aa0121821",
+        "type": "ui_tab",
+        "name": "Jalausie",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "20a7f9828c5afca2",
+        "type": "ui_tab",
+        "name": "Sonnensegel",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "de4be06ef3af6aaf",
+        "type": "ui_tab",
+        "name": "Debug",
+        "icon": "build",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e4d9f72dcf41c02c",
+        "type": "comment",
+        "z": "53e94bf09e2eba1c",
+        "name": "yxxx: BO's IMPOTRTANT PROGRAMM INFORMATION",
+        "info": "y101:0 DO_Channel1Up\ny102:0 DO_Channel1Down\ny103:0 DO_Channel2Up\ny104:0 DO_Channel2Down\ny105:0 DO_Wind_Led\ny106:0 DO_Rain_Led\n",
+        "x": 220,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "3f3f07f1b8821f46",
+        "type": "link in",
+        "z": "53e94bf09e2eba1c",
+        "name": "link in Jalausie",
+        "links": [
+            "3f0426ec96d0473c",
+            "3b261d79bcf71a8a",
+            "171bf7c254f076ad"
+        ],
+        "x": 55,
+        "y": 860,
+        "wires": [
+            [
+                "0d9c7b59e767806c"
+            ]
+        ]
+    },
+    {
+        "id": "2ffd6a3cb559d013",
+        "type": "serial in",
+        "z": "53e94bf09e2eba1c",
+        "name": "",
+        "serial": "90f9ec1d.3035a",
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "f2b09e64bc175dc6"
+            ]
+        ]
+    },
+    {
+        "id": "b3284a676f4e189e",
+        "type": "serial out",
+        "z": "53e94bf09e2eba1c",
+        "name": "",
+        "serial": "90f9ec1d.3035a",
+        "x": 980,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "87f8def61c6ce0ae",
+        "type": "debug",
+        "z": "53e94bf09e2eba1c",
+        "name": "Normalbetrieb",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "bc92a9c4ccafca36",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "y105:x DO_Wind_Led",
+        "func": "// alarm\nvar alarm1 = Number(global.get('BV_WindAlarm1'));\nvar alarm2 = Number(global.get('BV_WindAlarm2'));\n\n\nif (alarm1 + alarm2 > 0) {\n     msg.payload = 'y105:1';\n}\nelse {\n     msg.payload = 'y105:0';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 1000,
+        "wires": [
+            [
+                "7be011b03a3d11fe",
+                "2ec26d0148655b19"
+            ]
+        ]
+    },
+    {
+        "id": "0067c4afcc06683f",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "y106:1 DO_Rain_Led",
+        "func": "// alarm\nvar alarm1 = Number(global.get('BV_RainAlarm1'));\nvar alarm2 = Number(global.get('BV_RainAlarm2'));\n\n\nif (alarm1 + alarm2 > 0) {\n     msg.payload = 'y106:1';\n}\nelse {\n     msg.payload = 'y106:0';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 1080,
+        "wires": [
+            [
+                "7be011b03a3d11fe",
+                "2ec26d0148655b19"
+            ]
+        ]
+    },
+    {
+        "id": "964b0155f16ff126",
+        "type": "inject",
+        "z": "53e94bf09e2eba1c",
+        "name": "63s string",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "226800",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "xxx",
+        "payloadType": "str",
+        "x": 210,
+        "y": 1080,
+        "wires": [
+            [
+                "0067c4afcc06683f"
+            ]
+        ]
+    },
+    {
+        "id": "11a962a334b75cfb",
+        "type": "inject",
+        "z": "53e94bf09e2eba1c",
+        "name": "60s string",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "xxx",
+        "payloadType": "str",
+        "x": 210,
+        "y": 1000,
+        "wires": [
+            [
+                "bc92a9c4ccafca36"
+            ]
+        ]
+    },
+    {
+        "id": "0d9c7b59e767806c",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "DO_ChannelX Up and Down",
+        "func": "if (msg.payload.startsWith('y101:0')) {\n    global.set('DO_Channel1Up', 0);\n} \nif (msg.payload.startsWith('y101:1')) {\n    global.set('DO_Channel1Up', 1);\n} \nif (msg.payload.startsWith('y102:0')) {\n    global.set('DO_Channel1Down', 0);\n}\nif (msg.payload.startsWith('y102:1')) {\n    global.set('DO_Channel1Down', 1);\n} \nif (msg.payload.startsWith('y103:0')) {\n    global.set('DO_Channel2Up', 0);\n}\nif (msg.payload.startsWith('y103:1')) {\n    global.set('DO_Channel2Up', 1);\n}\nif (msg.payload.startsWith('y104:0')) {\n    global.set('DO_Channel2Down', 0);\n}\nif (msg.payload.startsWith('y104:1')) {\n    global.set('DO_Channel2Down', 1);\n} \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 860,
+        "wires": [
+            [
+                "7be011b03a3d11fe",
+                "2ec26d0148655b19",
+                "3229a7e6b8ded100",
+                "44b1eced2be2019c",
+                "852f049efbc4a761",
+                "240e319be33d4b15"
+            ]
+        ]
+    },
+    {
+        "id": "2070385d4256abdc",
+        "type": "inject",
+        "z": "53e94bf09e2eba1c",
+        "name": "once",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "e26ff6d61ccb343d"
+            ]
+        ]
+    },
+    {
+        "id": "e26ff6d61ccb343d",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "init global Contex",
+        "func": "global.set('DI_Rain',0);\nglobal.set('AI_Wind',0);\nglobal.set('DO_Channel1Up', 0);\nglobal.set('DO_Channel1Down', 0);\nglobal.set('DO_Channel2Up', 0);\nglobal.set('DO_Channel2Down', 0);\nglobal.set('BV_RainAlarm1', 0);\nglobal.set('BV_RainAlarm2', 0);\nglobal.set('BV_WindAlarm1', 0);\nglobal.set('BV_WindAlarm2', 0);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b45341791bee3da7",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "DI_Rain x005 30 Minuten verzögert",
+        "func": "if (msg.payload.startsWith('x005:1')) {\n    global.set('DI_Rain',1);   \n}\nif (msg.payload.startsWith('x005:0')) {\n    global.set('DI_Rain', 0);\n}\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 280,
+        "wires": [
+            [
+                "9c6a662b280ab362"
+            ]
+        ]
+    },
+    {
+        "id": "2eb38e7169ea80e0",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "AI_Wind x006",
+        "func": "if (msg.payload.startsWith('x006:')) {\n    var result = msg.payload;\n    var resultPart = result.substr(5);\n    var  windspeed = parseFloat(resultPart);\n    global.set('AI_Wind',windspeed);\n    return msg;\n   \n} \nelse{\n}\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 200,
+        "wires": [
+            [
+                "9c6a662b280ab362"
+            ]
+        ]
+    },
+    {
+        "id": "9c6a662b280ab362",
+        "type": "debug",
+        "z": "53e94bf09e2eba1c",
+        "name": "serial in",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1320,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "7be011b03a3d11fe",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "Normalbetrieb",
+        "func": "var x = Number(global.get('Testbetrieb'));\nif (x===0){\n    \nreturn msg; \n}\n ",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 1000,
+        "wires": [
+            [
+                "87f8def61c6ce0ae",
+                "b3284a676f4e189e"
+            ]
+        ]
+    },
+    {
+        "id": "2ec26d0148655b19",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "Testbetrieb",
+        "func": "var x = Number(global.get('Testbetrieb'));\nif (x===1){\n  return msg;\n}  \n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 1080,
+        "wires": [
+            [
+                "2598b06c75f65ed4"
+            ]
+        ]
+    },
+    {
+        "id": "d775c8c4d6a1179a",
+        "type": "inject",
+        "z": "53e94bf09e2eba1c",
+        "name": "Regen x005:0",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "x005:0",
+        "payloadType": "str",
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "eb2bcef644058de9"
+            ]
+        ]
+    },
+    {
+        "id": "aa53958686546b5c",
+        "type": "inject",
+        "z": "53e94bf09e2eba1c",
+        "name": "Regen x005:1",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "x005:1",
+        "payloadType": "str",
+        "x": 150,
+        "y": 320,
+        "wires": [
+            [
+                "eb2bcef644058de9"
+            ]
+        ]
+    },
+    {
+        "id": "a1af5e50d9b6441e",
+        "type": "inject",
+        "z": "53e94bf09e2eba1c",
+        "name": "AI_Wind x006 = 10",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "x006:10.0",
+        "payloadType": "str",
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "84726e3b96a568f9"
+            ]
+        ]
+    },
+    {
+        "id": "70c4cd6e596adbc5",
+        "type": "inject",
+        "z": "53e94bf09e2eba1c",
+        "name": "AI_Wind x006 = 40",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "x006:40.0",
+        "payloadType": "str",
+        "x": 170,
+        "y": 400,
+        "wires": [
+            [
+                "84726e3b96a568f9"
+            ]
+        ]
+    },
+    {
+        "id": "f2b09e64bc175dc6",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "Normalbetrieb",
+        "func": "var x = Number(global.get('Testbetrieb'));\nif (x===0){\n     return msg;\n}\n  else{\n\n  }   \n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "2eb38e7169ea80e0",
+                "b45341791bee3da7"
+            ]
+        ]
+    },
+    {
+        "id": "eb2bcef644058de9",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "Testbetrieb",
+        "func": "var x = Number(global.get('Testbetrieb'));\nif (x===1){\n  return msg;\n}\n  else{\n    \n  }   \n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "bf20b8e65792e492"
+            ]
+        ]
+    },
+    {
+        "id": "240e319be33d4b15",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "JalausieDownToFileCSV",
+        "func": "var unit = \"Unten\" ;\nvar dummy = Number(global.get('DO_Channel1Down'));\nif (dummy === 1 ) {\n  msg.payload = global.get('date') + \" \" + global.get('time') + \",\" +\"Jalausie,\"  +\"Unten,\" +  \"Ein\" ;\n  return msg; \n}\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 580,
+        "wires": [
+            [
+                "e8c2e5d12440328b"
+            ]
+        ]
+    },
+    {
+        "id": "852f049efbc4a761",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "JalausieUpToFileCSV",
+        "func": "var unit = \"Unten\" ;\nvar dummy = Number(global.get('DO_Channel1Up'));\nmsg.change = dummy;\nif (dummy === 1 ) {\n  msg.payload = global.get('date') + \" \" + global.get('time') + \",\" +\"Jalausie,\"  +\"Oben,\" +  \"Ein\";\n  return msg;   \n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 620,
+        "wires": [
+            [
+                "3c6e0eeef129f6f0"
+            ]
+        ]
+    },
+    {
+        "id": "e8c2e5d12440328b",
+        "type": "file",
+        "z": "53e94bf09e2eba1c",
+        "name": "Log write file",
+        "filename": "/home/pi/.node-red/context/Log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1170,
+        "y": 580,
+        "wires": [
+            [
+                "92a0e7d36be7a467"
+            ]
+        ]
+    },
+    {
+        "id": "3c6e0eeef129f6f0",
+        "type": "file",
+        "z": "53e94bf09e2eba1c",
+        "name": "Log write file",
+        "filename": "/home/pi/.node-red/context/Log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1170,
+        "y": 620,
+        "wires": [
+            [
+                "92a0e7d36be7a467"
+            ]
+        ]
+    },
+    {
+        "id": "44b1eced2be2019c",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "SonnensegelDownToFileCSV",
+        "func": "var unit = \"Unten\" ;\nvar dummy = Number(global.get('DO_Channel2Down'));\nif (dummy === 1 ) {\n  msg.payload = global.get('date') + \" \" + global.get('time') + \",\" +\"Sonnensegel,\"  +\"Unten,\" +  \"Ein\" \n  return msg;  \n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 740,
+        "wires": [
+            [
+                "fec22645ce2a4261"
+            ]
+        ]
+    },
+    {
+        "id": "3229a7e6b8ded100",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "SonnensegelUpToFileCSV",
+        "func": "var dummy = Number(global.get('DO_Channel2Up'));\nmsg.change = dummy;\nif (dummy === 1 ) {\n  msg.payload = global.get('date') + \" \" + global.get('time') + \",\" +\"Sonnensegel,\"  +\"Oben,\" +  \"Ein\";\n  return msg;   \n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 780,
+        "wires": [
+            [
+                "84a28dd39e3df429"
+            ]
+        ]
+    },
+    {
+        "id": "fec22645ce2a4261",
+        "type": "file",
+        "z": "53e94bf09e2eba1c",
+        "name": "Log write file",
+        "filename": "/home/pi/.node-red/context/Log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1170,
+        "y": 740,
+        "wires": [
+            [
+                "92a0e7d36be7a467"
+            ]
+        ]
+    },
+    {
+        "id": "84a28dd39e3df429",
+        "type": "file",
+        "z": "53e94bf09e2eba1c",
+        "name": "Log write file",
+        "filename": "/home/pi/.node-red/context/Log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1170,
+        "y": 780,
+        "wires": [
+            [
+                "92a0e7d36be7a467"
+            ]
+        ]
+    },
+    {
+        "id": "bf20b8e65792e492",
+        "type": "trigger",
+        "z": "53e94bf09e2eba1c",
+        "name": "",
+        "op1": "",
+        "op2": "",
+        "op1type": "pay",
+        "op2type": "payl",
+        "duration": "-60",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 600,
+        "y": 280,
+        "wires": [
+            [
+                "2eb38e7169ea80e0",
+                "b45341791bee3da7"
+            ]
+        ]
+    },
+    {
+        "id": "5639ff56f7a91690",
+        "type": "trigger",
+        "z": "53e94bf09e2eba1c",
+        "name": "",
+        "op1": "",
+        "op2": "",
+        "op1type": "pay",
+        "op2type": "payl",
+        "duration": "-60",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 600,
+        "y": 380,
+        "wires": [
+            [
+                "2eb38e7169ea80e0",
+                "b45341791bee3da7"
+            ]
+        ]
+    },
+    {
+        "id": "84726e3b96a568f9",
+        "type": "function",
+        "z": "53e94bf09e2eba1c",
+        "name": "Testbetrieb",
+        "func": "var x = Number(global.get('Testbetrieb'));\nif (x===1){\n  return msg;\n}\n  else{\n    \n  }   \n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "5639ff56f7a91690"
+            ]
+        ]
+    },
+    {
+        "id": "92a0e7d36be7a467",
+        "type": "link out",
+        "z": "53e94bf09e2eba1c",
+        "name": "refresh",
+        "mode": "link",
+        "links": [
+            "1d9458e30e8dfd55"
+        ],
+        "x": 1385,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "2598b06c75f65ed4",
+        "type": "debug",
+        "z": "53e94bf09e2eba1c",
+        "name": "Testbetrieb",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "2723fadeead902e7",
+        "type": "comment",
+        "z": "f3786f090d92b22a",
+        "name": "Controllino Jealousy2Channel",
+        "info": "user interface for Controllino Jealousy2Channel",
+        "x": 180,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "3d8761d69be1bb8a",
+        "type": "comment",
+        "z": "f3786f090d92b22a",
+        "name": "Übersicht",
+        "info": "",
+        "x": 120,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "27810989aed3d1ff",
+        "type": "comment",
+        "z": "f3786f090d92b22a",
+        "name": "ID\tICAO\tNAME\tLAT\tLON\tELEV K2913\t----\tBOEBLINGEN\t48.41\t21398\t445",
+        "info": "",
+        "x": 300,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "1647831326b06ebf",
+        "type": "function",
+        "z": "f3786f090d92b22a",
+        "name": "LocalTime",
+        "func": "var timestamp = msg.payload;\nlet time = new Date(timestamp).toLocaleTimeString();\nglobal.set('time', time);\nmsg.payload = flow.get('FontUebersicht') + time;\n\n// timeShort\nvar x = 'text';\nx = time.substring(0,5);\nglobal.set('timeShort', x );\n\n\n// time minute\nvar timeHourText = x.substr(0, 2);\nvar timeMinuteText = x.substr(3, 2);\nvar timeMinuteNumber = Number(timeHourText) * 60 + Number(timeMinuteText);\nglobal.set('TimeMinute', timeMinuteNumber, 'file'); \n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 360,
+        "wires": [
+            [
+                "3a0633ca609fcb7d"
+            ]
+        ]
+    },
+    {
+        "id": "f0d391944c56bb84",
+        "type": "inject",
+        "z": "f3786f090d92b22a",
+        "name": "intervall 1 sec",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 360,
+        "wires": [
+            [
+                "e3d925b4a8e347ba"
+            ]
+        ]
+    },
+    {
+        "id": "b69896e32462e4f6",
+        "type": "inject",
+        "z": "f3786f090d92b22a",
+        "name": "intervall 10 min",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 167,
+        "y": 1091,
+        "wires": [
+            [
+                "6bb2396036e46014"
+            ]
+        ]
+    },
+    {
+        "id": "35f98ca0ac86145b",
+        "type": "function",
+        "z": "f3786f090d92b22a",
+        "name": "tempc HTTP",
+        "func": "\nlet temp = msg.payload.tempc;\nglobal.set('AI_Aussentemperatur', temp);\n\nmsg.payload = flow.get('FontUebersicht') + msg.payload.tempc + \" °C\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 1040,
+        "wires": [
+            [
+                "ef8791a738fd40e1"
+            ]
+        ]
+    },
+    {
+        "id": "91852fdcd5ca68bc",
+        "type": "function",
+        "z": "f3786f090d92b22a",
+        "name": "windspeed max HTTP and Controllino",
+        "func": "//Controllino\nvar speed1 = 5.4;\nspeed1 = Number(global.get('AI_Wind'));\n\n//HTTP\nvar speed2 = 3.2;\nspeed2 = msg.payload.FX1*3.6;\nspeed2 = Math.round(speed2*100)/100;\nglobal.set('AV_WindMax', Math.max(speed1, speed2))\nglobal.set('AI_Wind_HTTP',speed2);\nglobal.set('AV_WindMax',Math.max(speed1,speed2));\n\nmsg.payload = flow.get('FontUebersicht') + Math.max(speed1, speed2) + \" km/h\"\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 1153,
+        "wires": [
+            [
+                "3ee4e347eae3f7d0"
+            ]
+        ]
+    },
+    {
+        "id": "124e1f4d46bdef48",
+        "type": "inject",
+        "z": "f3786f090d92b22a",
+        "name": "all 60 minutes",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "0 0-2 * * *",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 140,
+        "y": 520,
+        "wires": [
+            [
+                "d0e9aba8d279c6d1",
+                "33910759d28666e4"
+            ]
+        ]
+    },
+    {
+        "id": "d0e9aba8d279c6d1",
+        "type": "function",
+        "z": "f3786f090d92b22a",
+        "name": "Get Sunset info",
+        "func": "msg.url = \"https://api.sunrise-sunset.org/json?&formatted=0&tzid=Europe/Berlin&lat=48.6429777&lng=9.004596,19\";\nreturn msg;\n\n//https://sunrise-sunset.org/api\n\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 520,
+        "wires": [
+            [
+                "88488c336519892b"
+            ]
+        ]
+    },
+    {
+        "id": "88488c336519892b",
+        "type": "http request",
+        "z": "f3786f090d92b22a",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 670,
+        "y": 520,
+        "wires": [
+            [
+                "0c99eb4bb986f426",
+                "8856d6309f873643",
+                "c19de3fe93275f74",
+                "f253a2d4b805a4de"
+            ]
+        ]
+    },
+    {
+        "id": "2fe3e43381dfb3a7",
+        "type": "comment",
+        "z": "f3786f090d92b22a",
+        "name": "https://flows.nodered.org/flow/195d85a2f5ebfceea78d3f68bd447c0b",
+        "info": "",
+        "x": 620,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "f8e487b55547139f",
+        "type": "comment",
+        "z": "f3786f090d92b22a",
+        "name": "google.maps 48.6429777,9.004596",
+        "info": "https://www.google.de/maps/place/Annaweg+9,+71088+Holzgerlingen/@48.6429777,9.004596,19",
+        "x": 520,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "0c99eb4bb986f426",
+        "type": "function",
+        "z": "f3786f090d92b22a",
+        "name": "sunrise",
+        "func": "var sunrise = msg.payload.results.sunrise;\nsunrise = sunrise.substr(11,5);\nglobal.set('Sunrise', sunrise);\n\n// sunrise minute\nvar riseHourText = sunrise.substr(0, 2);\nvar riseMinuteText = sunrise.substr(3, 2);\nvar riseMinuteNumber = Number(riseHourText) * 60 + Number(riseMinuteText);\nglobal.set('SunriseMinute', riseMinuteNumber, 'file'); \n\nmsg.payload = flow.get('FontUebersicht') + sunrise;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 520,
+        "wires": [
+            [
+                "e7bf8bf90269a17a"
+            ]
+        ]
+    },
+    {
+        "id": "8856d6309f873643",
+        "type": "function",
+        "z": "f3786f090d92b22a",
+        "name": "solar_noon",
+        "func": "var solar_noon = msg.payload.results.solar_noon;\nsolar_noon = solar_noon.substr(11, 5);\nglobal.set('solar_noon', solar_noon);\n\n// solar_noonMinute\nvar noonHourText = solar_noon.substr(0, 2);\nvar noonMinuteText = solar_noon.substr(3, 2);\nvar noonMinuteNumber = Number(noonHourText) * 60 + Number(noonMinuteText);\nglobal.set('solar_noonMinute', noonMinuteNumber, 'file');\n\nmsg.payload = flow.get('FontUebersicht') + solar_noon;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 580,
+        "wires": [
+            [
+                "7b8b8c5379af3854"
+            ]
+        ]
+    },
+    {
+        "id": "c19de3fe93275f74",
+        "type": "function",
+        "z": "f3786f090d92b22a",
+        "name": "sunset",
+        "func": "var sunset = msg.payload.results.sunset;\nsunset = sunset.substr(11, 5);\nglobal.set('Sunset', sunset);\n\n// sunset minute\nvar setHourText = sunset.substr(0, 2);\nvar setMinuteText = sunset.substr(3, 2);\nvar setMinuteNumber = Number(setHourText) * 60 + Number(setMinuteText);\nglobal.set('SunsetMinute', setMinuteNumber, 'file'); \n\nmsg.payload = flow.get('FontUebersicht') + sunset;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 640,
+        "wires": [
+            [
+                "8f4fc55a33283fb5"
+            ]
+        ]
+    },
+    {
+        "id": "f253a2d4b805a4de",
+        "type": "function",
+        "z": "f3786f090d92b22a",
+        "name": "date",
+        "func": "var date = msg.payload.results.sunset;\nmsg.payload = flow.get('FontUebersicht') + date;\nvar year = date.substr(0,4);\nvar month = date.substr(5,2);\nvar day = date.substr(8,2);\nmsg.payload =flow.get('FontUebersicht') + day+\".\"+month+\".\"+year;\n\nglobal.set('date', date.substr(0,4) + \"/\" + date.substr(5,2) + \"/\" + date.substr(8,2));\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 700,
+        "wires": [
+            [
+                "4dac3369ba525172"
+            ]
+        ]
+    },
+    {
+        "id": "36a53a20c5972866",
+        "type": "function",
+        "z": "f3786f090d92b22a",
+        "name": "rain",
+        "func": "var rain = Number(global.get('DI_Rain'));\nif (rain === 1) {\n  msg.payload = flow.get('FontUebersicht') + \"Regen\" ;\n} else {\n  msg.payload = flow.get('FontUebersicht') + \"Kein Regen\" ;\n}\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1480,
+        "wires": [
+            [
+                "0daf0e1c85a7f122"
+            ]
+        ]
+    },
+    {
+        "id": "a2747811f4cc7c70",
+        "type": "function",
+        "z": "f3786f090d92b22a",
+        "name": "AI_Regenwahrscheinlichkeit",
+        "func": "\nlet x = msg.payload.precipitation_perc;\nglobal.set('AI_Regenwahrscheinlichkeit', x);\n\nmsg.payload = flow.get('FontUebersicht') + x + \" %\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 1240,
+        "wires": [
+            [
+                "8a9584590c167815"
+            ]
+        ]
+    },
+    {
+        "id": "7fa811a284804273",
+        "type": "function",
+        "z": "f3786f090d92b22a",
+        "name": "AI_humidity",
+        "func": "\nlet x = msg.payload.humidity;\nglobal.set('AI_humidity', x);\n\nmsg.payload = flow.get('FontUebersicht') + x + \" %\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 622,
+        "y": 1376,
+        "wires": [
+            [
+                "989344aaf0777748"
+            ]
+        ]
+    },
+    {
+        "id": "33910759d28666e4",
+        "type": "function",
+        "z": "f3786f090d92b22a",
+        "name": "FontUebersicht",
+        "func": "let x = '<font size = 16><font color = blue>';\nflow.set('FontUebersicht', x);\nmsg.payload = x;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a0633ca609fcb7d",
+        "type": "ui_text",
+        "z": "f3786f090d92b22a",
+        "group": "6752cf8bb4d6264e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1110,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "ef8791a738fd40e1",
+        "type": "ui_text",
+        "z": "f3786f090d92b22a",
+        "group": "5c960cfb609cc93c",
+        "order": "3",
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1050,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "3ee4e347eae3f7d0",
+        "type": "ui_text",
+        "z": "f3786f090d92b22a",
+        "group": "0d643f19a234b1e3",
+        "order": "5",
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "Maximale Windböe innerhalb der letzten Stunde",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1160,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "e7bf8bf90269a17a",
+        "type": "ui_text",
+        "z": "f3786f090d92b22a",
+        "group": "dd6696f7cc452fd8",
+        "order": "8",
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1470,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7b8b8c5379af3854",
+        "type": "ui_text",
+        "z": "f3786f090d92b22a",
+        "group": "52cbbc12315fe777",
+        "order": "9",
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1470,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "8f4fc55a33283fb5",
+        "type": "ui_text",
+        "z": "f3786f090d92b22a",
+        "group": "afc6ba1da50fe30f",
+        "order": "10",
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1490,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "4dac3369ba525172",
+        "type": "ui_text",
+        "z": "f3786f090d92b22a",
+        "group": "956a7397bc0e915e",
+        "order": "2",
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1490,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "0daf0e1c85a7f122",
+        "type": "ui_text",
+        "z": "f3786f090d92b22a",
+        "group": "f513320a4481d386",
+        "order": "7",
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 870,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "8a9584590c167815",
+        "type": "ui_text",
+        "z": "f3786f090d92b22a",
+        "group": "e8347c42c79e06a8",
+        "order": "6",
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1050,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "989344aaf0777748",
+        "type": "ui_text",
+        "z": "f3786f090d92b22a",
+        "group": "1ca180f72b81918c",
+        "order": "4",
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 930,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "e3d925b4a8e347ba",
+        "type": "timestamp",
+        "z": "f3786f090d92b22a",
+        "name": "time",
+        "x": 430,
+        "y": 360,
+        "wires": [
+            [
+                "1647831326b06ebf"
+            ]
+        ]
+    },
+    {
+        "id": "6bb2396036e46014",
+        "type": "dwdweather",
+        "z": "f3786f090d92b22a",
+        "name": "Böblingen",
+        "mosmixStation": "K2913",
+        "lookAheadHours": "0",
+        "additionalFields": "FX1",
+        "omitMessageOnStart": true,
+        "repeat": "0",
+        "topic": "",
+        "x": 420,
+        "y": 1089,
+        "wires": [
+            [
+                "35f98ca0ac86145b",
+                "91852fdcd5ca68bc",
+                "a2747811f4cc7c70",
+                "7fa811a284804273"
+            ]
+        ]
+    },
+    {
+        "id": "4a9866a97bd1a2ac",
+        "type": "comment",
+        "z": "f3786f090d92b22a",
+        "name": "msg.url = \"https://api.sunrise-sunset.org/json?&formatted=0&tzid=Europe/Berlin&lat=48.6429777&lng=9.004596,19\";",
+        "info": "",
+        "x": 590,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "913ea3d5495e8ffa",
+        "type": "inject",
+        "z": "f3786f090d92b22a",
+        "name": "intervall 10 sec",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 1480,
+        "wires": [
+            [
+                "36a53a20c5972866"
+            ]
+        ]
+    },
+    {
+        "id": "b58ad9b578197e98",
+        "type": "comment",
+        "z": "f3786f090d92b22a",
+        "name": "FX1 Maximale Windböe innerhalb der letzten Stunde",
+        "info": "",
+        "x": 1070,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "85f4bf6330323c38",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Jalausie",
+        "info": "",
+        "x": 80,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "e0f4a24c1bb3e3b8",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Windgeschwindigkeit",
+        "info": "",
+        "x": 120,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c9b3c83158e0986a",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Flow BV_WindAlarm",
+        "info": "",
+        "x": 370,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "096ee6a04eeee009",
+        "type": "inject",
+        "z": "2e9072eeb23d4182",
+        "name": "10s timestamp",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 540,
+        "wires": [
+            [
+                "3886cf550310b9cf",
+                "7ffd2e9833c0b2d9"
+            ]
+        ]
+    },
+    {
+        "id": "3886cf550310b9cf",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "AI_windSpeed",
+        "func": "msg.payload = Number(global.get('AV_WindMax'));\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 440,
+        "wires": [
+            [
+                "b663200be76e4921"
+            ]
+        ]
+    },
+    {
+        "id": "b58a81f7fdba1b04",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "BV_WindMeasureActive",
+        "func": "flow.set('BV_WindMeasureActive', msg.payload, 'file');\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ffd2e9833c0b2d9",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "Calculate BV_WindAlarn",
+        "func": "var x = 0;\nvar active = flow.get('BV_WindMeasureActive', 'file');\nif (active === 1 && Number(global.get('AV_WindMax')) <= Number(flow.get('AI_speedHighLimit'))) {\n    x = 0;\n}\nif (active === 1 && Number(global.get('AV_WindMax')) >= Number(flow.get('AI_speedHighLimit'))) {\n    x = 1;\n}\nelse {\n    x = 0;\n}\n\nif (x === 1) {\n    msg.payload = '<font size = 16><font color = red>' + 'Alarm';\n    global.set('BV_WindAlarm1', 1, 'file');\n}\nif (x === 0) {\n    msg.payload = '<font size = 16><font color = green>' + 'Kein Alarm';\n    global.set('BV_WindAlarm1', 0, 'file');\n}\nif (active === 0) {\n    msg.payload = 'Funktion nicht aktiv!';\n    global.set('BV_WindAlarm1', 0, 'file');\n}\nflow.set('BV_WindAlarm', x, 'file');\nglobal.set('BV_RainAlarm1', x);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 540,
+        "wires": [
+            [
+                "f4e75ab860ece791",
+                "a05ea8b17625abd2"
+            ]
+        ]
+    },
+    {
+        "id": "42dd3de7213aebf6",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Jalausie",
+        "info": "",
+        "x": 80,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "d7379370af8c1ece",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Niederschlag",
+        "info": "",
+        "x": 90,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "fbec7b84e17601a3",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "AV_RegenwahrscheinlichkeitLimit",
+        "func": "let x = msg.payload;\nflow.set('AV_RegenwahrscheinlichkeitLimit', x,'file');\nmsg.payload = x + \" %\";\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9dcf6d422bc047fe",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Flow BV_RainAlarm",
+        "info": "",
+        "x": 270,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "266da8afec9576a2",
+        "type": "inject",
+        "z": "2e9072eeb23d4182",
+        "name": "10s timestamp",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 133,
+        "y": 1466,
+        "wires": [
+            [
+                "0136c3b26e188d0b",
+                "0f4d1e3e737b17d4",
+                "543228353b80c1d1"
+            ]
+        ]
+    },
+    {
+        "id": "0136c3b26e188d0b",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "AI_Regenwahrscheinlichkeit",
+        "func": "msg.payload = Number(global.get('AI_Regenwahrscheinlichkeit'));\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1380,
+        "wires": [
+            [
+                "7bdfbe20278d80b6"
+            ]
+        ]
+    },
+    {
+        "id": "0f4d1e3e737b17d4",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "rain",
+        "func": "var rain = Number(global.get('DI_Rain'));\nif (rain == 1) {\n  msg.payload = \"Regen\" ;\n} \nelse {\n  msg.payload = \"Kein Regen\" ;\n}\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 1320,
+        "wires": [
+            [
+                "170c1fed2d03be6d"
+            ]
+        ]
+    },
+    {
+        "id": "543228353b80c1d1",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "Calculate BV_RainAlarm",
+        "func": "var rain = Number(global.get('DI_Rain'));\nvar active = Number(flow.get('BV_RainActive'));\nvar x = 0;\n\n// rain alarm\nif (active === 1 && (Number(global.get('AI_Regenwahrscheinlichkeit')) >= Number(flow.get('AV_RegenwahrscheinlichkeitLimit')) || rain === 1)) {\n    x = 1;\n    msg.payload = '<font size = 16><font color = red>' + 'Alarm';\n}\n// no rain alarm\nif (active === 1 && Number(global.get('AI_Regenwahrscheinlichkeit')) < Number(flow.get('AV_RegenwahrscheinlichkeitLimit')) && rain === 0) {\n    x = 0;\n    msg.payload = '<font size = 16><font color = green>' + 'Kein Alarm';\n}\n// not active\nif (active === 0) {\n    x = 0;\n    msg.payload = 'Funktion nicht aktiv!';\n}\nflow.set('BV_RainAlarm', x);\nglobal.set('BV_RainAlarm2', x);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 1460,
+        "wires": [
+            [
+                "e4571c3608e92a90",
+                "fc97ff74ef0e90d8"
+            ]
+        ]
+    },
+    {
+        "id": "2239fa7f630bcdc0",
+        "type": "ui_slider",
+        "z": "2e9072eeb23d4182",
+        "name": "Grenzwert",
+        "label": "Grenzwert in %",
+        "tooltip": "Grenzwert Regenwahrscheinlichkeit",
+        "group": "f38a2925ce1a334a",
+        "order": 4,
+        "width": "",
+        "height": "",
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "topicType": "str",
+        "min": 0,
+        "max": "100",
+        "step": "5",
+        "className": "",
+        "x": 1050,
+        "y": 1040,
+        "wires": [
+            [
+                "fbec7b84e17601a3",
+                "a2038052ce2d0de3"
+            ]
+        ]
+    },
+    {
+        "id": "f4e75ab860ece791",
+        "type": "ui_text",
+        "z": "2e9072eeb23d4182",
+        "group": "d90c12143c2e28b4",
+        "order": 6,
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 890,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "e4571c3608e92a90",
+        "type": "ui_text",
+        "z": "2e9072eeb23d4182",
+        "group": "f38a2925ce1a334a",
+        "order": 7,
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 890,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "170c1fed2d03be6d",
+        "type": "ui_text",
+        "z": "2e9072eeb23d4182",
+        "group": "f38a2925ce1a334a",
+        "order": 2,
+        "width": "",
+        "height": "",
+        "name": "Regen",
+        "label": "Regen",
+        "format": "{{msg.payload}}",
+        "layout": "",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 870,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "b663200be76e4921",
+        "type": "ui_gauge",
+        "z": "2e9072eeb23d4182",
+        "name": "Windgeschwindigkeit",
+        "group": "d90c12143c2e28b4",
+        "order": 2,
+        "width": "",
+        "height": "",
+        "gtype": "gage",
+        "title": "Maximale Windböe innerhalb der letzten Stunde",
+        "label": "",
+        "format": "{{value}}km/h",
+        "min": "0.0",
+        "max": "70",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1000,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "7bdfbe20278d80b6",
+        "type": "ui_gauge",
+        "z": "2e9072eeb23d4182",
+        "name": "Regenwahrscheinlichkeit",
+        "group": "f38a2925ce1a334a",
+        "order": 3,
+        "width": "",
+        "height": "",
+        "gtype": "gage",
+        "title": "Regenwahrscheinlichkeit",
+        "label": "",
+        "format": "{{value}} %",
+        "min": "0.0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 910,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "782586fe8cb0545d",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "AI_speedHighLimit",
+        "func": "flow.set('AI_speedHighLimit', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f46cb84a08a5bff4",
+        "type": "file",
+        "z": "2e9072eeb23d4182",
+        "name": "AI_speedHighLimit write file",
+        "filename": "~/.node-red/context/Jalausie/AI_speedHighLimit.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1300,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1fc3a98a776cc3e3",
+        "type": "file in",
+        "z": "2e9072eeb23d4182",
+        "name": "AI_speedHighLimit read file",
+        "filename": "~/.node-red/context/Jalausie/AI_speedHighLimit.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 480,
+        "y": 300,
+        "wires": [
+            [
+                "aae2c0aef7d7a1bd"
+            ]
+        ]
+    },
+    {
+        "id": "fed09eaa2ddd0205",
+        "type": "file in",
+        "z": "2e9072eeb23d4182",
+        "name": "BV_WindMeasureActive read file",
+        "filename": "~/.node-red/context/Jalausie/BV_WindMeasureActive.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 440,
+        "y": 220,
+        "wires": [
+            [
+                "24f50c32d1babfa0"
+            ]
+        ]
+    },
+    {
+        "id": "bae61aec810cf396",
+        "type": "catch",
+        "z": "2e9072eeb23d4182",
+        "name": "read file catches",
+        "scope": [
+            "f46cb84a08a5bff4",
+            "1fc3a98a776cc3e3",
+            "fed09eaa2ddd0205",
+            "d37080e101f36c6c",
+            "7c60151ac1e1ccb2",
+            "b117496f80e03a94",
+            "c6055bd5586ff107",
+            "a2038052ce2d0de3",
+            "5de35d559cdbf50d",
+            "9cb308147de82363"
+        ],
+        "uncaught": false,
+        "x": 260,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d37080e101f36c6c",
+        "type": "file",
+        "z": "2e9072eeb23d4182",
+        "name": "BV_WindMeasureActive write file",
+        "filename": "~/.node-red/context/Jalausie/BV_WindMeasureActive.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1320,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c60151ac1e1ccb2",
+        "type": "file in",
+        "z": "2e9072eeb23d4182",
+        "name": "BV_RainActive read file",
+        "filename": "~/.node-red/context/Jalausie/BV_RainActive.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 510,
+        "y": 960,
+        "wires": [
+            [
+                "e69c857dc9a9e401"
+            ]
+        ]
+    },
+    {
+        "id": "b117496f80e03a94",
+        "type": "file",
+        "z": "2e9072eeb23d4182",
+        "name": "BV_RainActive write file",
+        "filename": "~/.node-red/context/Jalausie/BV_RainActive.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1350,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6055bd5586ff107",
+        "type": "file in",
+        "z": "2e9072eeb23d4182",
+        "name": "AV_RegenwahrscheinlichkeitLimit read file",
+        "filename": "~/.node-red/context/Jalausie/AV_RegenwahrscheinlichkeitLimit.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 570,
+        "y": 1040,
+        "wires": [
+            [
+                "787a7bc7f724c222"
+            ]
+        ]
+    },
+    {
+        "id": "a2038052ce2d0de3",
+        "type": "file",
+        "z": "2e9072eeb23d4182",
+        "name": "AV_RegenwahrscheinlichkeitLimit write file",
+        "filename": "~/.node-red/context/Jalausie/AV_RegenwahrscheinlichkeitLimit.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1410,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e3eb7fa87ad5c32",
+        "type": "ui_slider",
+        "z": "2e9072eeb23d4182",
+        "name": "AI_speedHighLimit",
+        "label": "Grenzwert in km/h",
+        "tooltip": "Grenzwert Windgeschwindigkeit",
+        "group": "d90c12143c2e28b4",
+        "order": 3,
+        "width": "",
+        "height": "",
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "topicType": "str",
+        "min": 0,
+        "max": "70",
+        "step": "5",
+        "className": "",
+        "x": 990,
+        "y": 300,
+        "wires": [
+            [
+                "f46cb84a08a5bff4",
+                "782586fe8cb0545d"
+            ]
+        ]
+    },
+    {
+        "id": "2d21805ebf26a63c",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "BV_RainActive",
+        "func": "flow.set('BV_RainActive', msg.payload, 'file');\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "699930d0e3c829b9",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Jalausie",
+        "info": "",
+        "x": 140,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "897d6a89ab9b2a30",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Zeitprogramm",
+        "info": "",
+        "x": 150,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "66abc3b7f992e536",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Flow BV_Schedule",
+        "info": "",
+        "x": 430,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "3dc2833990b14dce",
+        "type": "ui_dropdown",
+        "z": "2e9072eeb23d4182",
+        "name": "",
+        "label": "Windschutz",
+        "tooltip": "Windschutz",
+        "place": "Select option",
+        "group": "d90c12143c2e28b4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "nicht aktiv",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "aktiv",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 950,
+        "y": 220,
+        "wires": [
+            [
+                "d37080e101f36c6c",
+                "b58a81f7fdba1b04"
+            ]
+        ]
+    },
+    {
+        "id": "decd6b391b4d6219",
+        "type": "ui_dropdown",
+        "z": "2e9072eeb23d4182",
+        "name": "",
+        "label": "Niederschlagschutz",
+        "tooltip": "Niederschlagschutz",
+        "place": "Select option",
+        "group": "f38a2925ce1a334a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "nicht aktiv",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "aktiv",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 1010,
+        "y": 960,
+        "wires": [
+            [
+                "2d21805ebf26a63c",
+                "b117496f80e03a94"
+            ]
+        ]
+    },
+    {
+        "id": "d138bcfe74e9c550",
+        "type": "file in",
+        "z": "2e9072eeb23d4182",
+        "name": "BV_ScheduleActive read file",
+        "filename": "~/.node-red/context/Jalausie/BV_ScheduleActive.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 420,
+        "y": 1720,
+        "wires": [
+            [
+                "06760349c294e103"
+            ]
+        ]
+    },
+    {
+        "id": "526bb3f079a844a0",
+        "type": "file",
+        "z": "2e9072eeb23d4182",
+        "name": "BV_ScheduleActive write file",
+        "filename": "~/.node-red/context/Jalausie/BV_ScheduleActive.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1300,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fea9cc3567210e41",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "BV_ScheduleActive",
+        "func": "flow.set('BV_ScheduleActive', msg.payload, 'file');\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1dd42b6233baf08",
+        "type": "ui_dropdown",
+        "z": "2e9072eeb23d4182",
+        "name": "",
+        "label": "Zeitprogramm",
+        "tooltip": "Zeitprogramm",
+        "place": "Select option",
+        "group": "14ea130f6e6b7405",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "nicht aktiv",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "aktiv",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 980,
+        "y": 1720,
+        "wires": [
+            [
+                "fea9cc3567210e41",
+                "526bb3f079a844a0"
+            ]
+        ]
+    },
+    {
+        "id": "aae2c0aef7d7a1bd",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "String to number",
+        "func": "flow.set('AI_speedHighLimit', Number(msg.payload));\nmsg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 300,
+        "wires": [
+            [
+                "2e3eb7fa87ad5c32"
+            ]
+        ]
+    },
+    {
+        "id": "24f50c32d1babfa0",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "String to number",
+        "func": "flow.set('BV_WindMeasureActive', Number(msg.payload), 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 220,
+        "wires": [
+            [
+                "3dc2833990b14dce"
+            ]
+        ]
+    },
+    {
+        "id": "e69c857dc9a9e401",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "String to number",
+        "func": "flow.set('BV_RainActive', Number(msg.payload), 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 960,
+        "wires": [
+            [
+                "decd6b391b4d6219"
+            ]
+        ]
+    },
+    {
+        "id": "787a7bc7f724c222",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "String to number",
+        "func": "let x = Number(msg.payload);\nflow.set('AV_RegenwahrscheinlichkeitLimit', x, 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1040,
+        "wires": [
+            [
+                "2239fa7f630bcdc0"
+            ]
+        ]
+    },
+    {
+        "id": "06760349c294e103",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "String to number",
+        "func": "flow.set('BV_ScheduleActive', Number(msg.payload), 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 1720,
+        "wires": [
+            [
+                "b1dd42b6233baf08"
+            ]
+        ]
+    },
+    {
+        "id": "441408db2138c209",
+        "type": "inject",
+        "z": "2e9072eeb23d4182",
+        "name": "Once a time string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "fed09eaa2ddd0205",
+                "1fc3a98a776cc3e3"
+            ]
+        ]
+    },
+    {
+        "id": "d9561da96fda4abe",
+        "type": "inject",
+        "z": "2e9072eeb23d4182",
+        "name": "Once a time string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1000,
+        "wires": [
+            [
+                "7c60151ac1e1ccb2",
+                "c6055bd5586ff107"
+            ]
+        ]
+    },
+    {
+        "id": "b2c81804c1fed18e",
+        "type": "inject",
+        "z": "2e9072eeb23d4182",
+        "name": "Once a time string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1720,
+        "wires": [
+            [
+                "d138bcfe74e9c550"
+            ]
+        ]
+    },
+    {
+        "id": "8b645bb2089ef2eb",
+        "type": "inject",
+        "z": "2e9072eeb23d4182",
+        "name": "10s string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 1980,
+        "wires": [
+            [
+                "8ec9a0f0a17d9b54"
+            ]
+        ]
+    },
+    {
+        "id": "8ec9a0f0a17d9b54",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "Calculate' BV_Schedule",
+        "func": "var y = 0;\nvar x = Number(flow.get('BO_ScheduleOutDown', 'file'));;\nvar active = Number(flow.get('BV_ScheduleActive','file'));\n\n// Schedule calcuculate\nif (x == 1 && active === 1) {\n    y = 1;\n    msg.payload ='<font size = 16><font color = blue>' + 'Unten';    \n} \nif (x == 0 && active === 1) {\n    msg.payload ='<font size = 16><font color = blue>' + 'Oben'; \n} \n// not active\nif (active === 0) {\n    msg.payload ='Funktion nicht aktiv!'; \n}\nflow.set('BV_Schedule', y, 'file');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1980,
+        "wires": [
+            [
+                "cfa1a91509932895"
+            ]
+        ]
+    },
+    {
+        "id": "cfa1a91509932895",
+        "type": "ui_text",
+        "z": "2e9072eeb23d4182",
+        "group": "14ea130f6e6b7405",
+        "order": "6",
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 770,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "fa53f531b2bc6ceb",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Jalausie",
+        "info": "",
+        "x": 100,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "b87fbd802797cefb",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Sonnenstand",
+        "info": "",
+        "x": 110,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "4b25300088d98694",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Flow BV_Sun",
+        "info": "",
+        "x": 370,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "6776e8e4dc509965",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "Sunrise",
+        "func": "msg.payload = '<font color= blue>' + global.get('Sunrise');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 3000,
+        "wires": [
+            [
+                "f623cea9035fe3ea"
+            ]
+        ]
+    },
+    {
+        "id": "661812d857cf1ce4",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "solar_noon",
+        "func": "msg.payload = '<font color= blue>' + global.get('solar_noon');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 3060,
+        "wires": [
+            [
+                "238bcae263d88b80"
+            ]
+        ]
+    },
+    {
+        "id": "6d39e87691f81aea",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "Sunset",
+        "func": "msg.payload = '<font color= blue>' + global.get('Sunset');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 3120,
+        "wires": [
+            [
+                "59bf90dcbfbfbdb9"
+            ]
+        ]
+    },
+    {
+        "id": "f623cea9035fe3ea",
+        "type": "ui_text",
+        "z": "2e9072eeb23d4182",
+        "group": "3a1c8458509d8435",
+        "order": 3,
+        "width": "",
+        "height": "",
+        "name": "Sunrise",
+        "label": "Sonnenaufgang",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1100,
+        "y": 3000,
+        "wires": []
+    },
+    {
+        "id": "238bcae263d88b80",
+        "type": "ui_text",
+        "z": "2e9072eeb23d4182",
+        "group": "3a1c8458509d8435",
+        "order": 4,
+        "width": "",
+        "height": "",
+        "name": "solar_noon",
+        "label": "Sonnenhöchststand",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1110,
+        "y": 3060,
+        "wires": []
+    },
+    {
+        "id": "59bf90dcbfbfbdb9",
+        "type": "ui_text",
+        "z": "2e9072eeb23d4182",
+        "group": "3a1c8458509d8435",
+        "order": 5,
+        "width": "",
+        "height": "",
+        "name": "sunset",
+        "label": "Sonnenuntergang",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1110,
+        "y": 3120,
+        "wires": []
+    },
+    {
+        "id": "01fc66cc507dea7e",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "timeShort",
+        "func": "msg.payload = '<font color= blue>' + global.get('timeShort');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 2900,
+        "wires": [
+            [
+                "0f33d23239d5dbf6"
+            ]
+        ]
+    },
+    {
+        "id": "0f33d23239d5dbf6",
+        "type": "ui_text",
+        "z": "2e9072eeb23d4182",
+        "group": "3a1c8458509d8435",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "timeShort",
+        "label": "Uhrzeit",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1100,
+        "y": 2900,
+        "wires": []
+    },
+    {
+        "id": "98b47f971e936891",
+        "type": "inject",
+        "z": "2e9072eeb23d4182",
+        "name": "30s string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 170,
+        "y": 2900,
+        "wires": [
+            [
+                "01fc66cc507dea7e",
+                "6776e8e4dc509965",
+                "661812d857cf1ce4",
+                "6d39e87691f81aea"
+            ]
+        ]
+    },
+    {
+        "id": "813349de9079eae6",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Jalausie",
+        "info": "",
+        "x": 120,
+        "y": 3700,
+        "wires": []
+    },
+    {
+        "id": "a7db421036089b78",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "google.maps 48.6429777,9.004596",
+        "info": "https://www.google.de/maps/place/Annaweg+9,+71088+Holzgerlingen/@48.6429777,9.004596,19",
+        "x": 420,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "3a78302cdfed561f",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "### This scenario is permanent and requires a file to read an write to ###",
+        "info": "",
+        "x": 440,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "634226abf6dd8d9e",
+        "type": "file",
+        "z": "2e9072eeb23d4182",
+        "name": "Schedule write",
+        "filename": "~/.node-red/context/Jalausie/Schedule.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 860,
+        "y": 1820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac60bd93d8914a2a",
+        "type": "inject",
+        "z": "2e9072eeb23d4182",
+        "name": "FireAfterReboot",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 1840,
+        "wires": [
+            [
+                "9cb308147de82363"
+            ]
+        ]
+    },
+    {
+        "id": "9cb308147de82363",
+        "type": "file in",
+        "z": "2e9072eeb23d4182",
+        "name": "Schedule read",
+        "filename": "~/.node-red/context/Jalausie/Schedule.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 420,
+        "y": 1840,
+        "wires": [
+            [
+                "f248a179b7a4b4e2"
+            ]
+        ]
+    },
+    {
+        "id": "f248a179b7a4b4e2",
+        "type": "ui_time_scheduler",
+        "z": "2e9072eeb23d4182",
+        "group": "14ea130f6e6b7405",
+        "name": "Zeitprogramm",
+        "startDay": "1",
+        "refresh": 60,
+        "devices": [
+            "Jalausie"
+        ],
+        "singleOff": false,
+        "onlySendChange": false,
+        "customPayload": false,
+        "eventMode": false,
+        "eventOptions": [],
+        "sendTopic": false,
+        "lat": "48.6429777",
+        "lon": "9.00459619",
+        "customContextStore": "",
+        "outputs": 2,
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "x": 640,
+        "y": 1840,
+        "wires": [
+            [
+                "634226abf6dd8d9e"
+            ],
+            [
+                "6c2ad36e64fd59b8"
+            ]
+        ]
+    },
+    {
+        "id": "6c2ad36e64fd59b8",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "BO_ScheduleOutDown",
+        "func": "\nif (msg.payload) {\n    flow.set('BO_ScheduleOutDown', 1,'file');\n}\nelse {\n     flow.set('BO_ScheduleOutDown', 0,'file');\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 1920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed6dd103836b5aed",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Motor",
+        "info": "",
+        "x": 117.1990966796875,
+        "y": 3746.335205078125,
+        "wires": []
+    },
+    {
+        "id": "da7ec312152e04d1",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "y102:0 DO_Channel2Down",
+        "info": "",
+        "x": 590,
+        "y": 3680,
+        "wires": []
+    },
+    {
+        "id": "b71b7cf228f38e89",
+        "type": "inject",
+        "z": "2e9072eeb23d4182",
+        "name": "2s string",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "empty",
+        "payloadType": "str",
+        "x": 160,
+        "y": 3900,
+        "wires": [
+            [
+                "a62fe36e599e8190"
+            ]
+        ]
+    },
+    {
+        "id": "171bf7c254f076ad",
+        "type": "link out",
+        "z": "2e9072eeb23d4182",
+        "name": "y102",
+        "mode": "link",
+        "links": [
+            "3f3f07f1b8821f46",
+            "55eae88563746e35"
+        ],
+        "x": 745,
+        "y": 3900,
+        "wires": []
+    },
+    {
+        "id": "dd4a19973876762e",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "y101:1 DO_Channel2Up",
+        "info": "",
+        "x": 617.1990966796875,
+        "y": 3646.335205078125,
+        "wires": []
+    },
+    {
+        "id": "914533b9645b2544",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "repeat alarm",
+        "info": "",
+        "x": 430,
+        "y": 3760,
+        "wires": []
+    },
+    {
+        "id": "6bafdcaeeff8d7bb",
+        "type": "comment",
+        "z": "2e9072eeb23d4182",
+        "name": "Remote Controll is in Controllino -programm",
+        "info": "",
+        "x": 737.1990966796875,
+        "y": 3786.335205078125,
+        "wires": []
+    },
+    {
+        "id": "a62fe36e599e8190",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "y101/y102 Up and Down",
+        "func": "// y101->Up\n// y102 -> Down\nvar oldPayload = flow.get('OldPayload');\nvar order = 0;\n\n// alarm\nvar alarm1 = Number(flow.get('BV_RainAlarm'));\nvar alarm2 = Number(flow.get('BV_WindAlarm'));\n\n// schedule  function\nvar x = Number(flow.get('BV_Schedule'));\n\n// Down\nif ( x === 1 && alarm1 == 0 && alarm2 == 0 ) {\n     order = 1;\n}\nelse{\n//Up\n     order = 0;\n}\n\nvar Stamp1Down = 0;\nvar Duration1Down = 0;\nvar Stamp1Up = 0;\nvar Duration1Up = 0;\nvar time1 = 10000; // ms\nvar time2 = 70000; // ms\nvar time3 = 72000000; // ms 2 hours\n\n\nif(order === 1)          // Down\n{\n     flow.set('Stamp1Up', Date.now());\n     // wait 10s\n     Stamp1Down = flow.get('Stamp1Down');\n     Duration1Down = Date.now() - Stamp1Down; \n     flow.set('Duration1Down', Duration1Down);\n\n     if (Duration1Down < time1){\n          msg.payload = \"y101:0\";\n     }\n     if (Duration1Down < time2 && Duration1Down > time1) {\n          msg.payload = \"y102:1\";\n     }\n     if (Duration1Down < time3 && Duration1Down > time2) {\n          msg.payload = \"y102:0\";\n     }     \n}\n\nif (order === 0)       // Up\n{\n     flow.set('Stamp1Down', Date.now());\n     //wait 10s\n     Stamp1Up = Number(flow.get('Stamp1Up'));\n     Duration1Up = Date.now() - Stamp1Up;\n     flow.set('Duration1Up', Duration1Up);\n     if (Duration1Up < time1) {\n          msg.payload = \"y102:0\";\n     }\n     if (Duration1Up < time2 && Duration1Up > time1) {\n          msg.payload = \"y101:1\";\n     }\n     // wait 60s Motorlaufzeit\n     if (Duration1Up < time3 && Duration1Up > time2 ) {\n          msg.payload = \"y101:0\";          \n     }\n     // wait 1h repeat alarm\n     if (Duration1Up > time3 &&(alarm1 == 1 || alarm2 == 1)) {\n       flow.set('Stamp1Down', Date.now());  \n       flow.set('Stamp1Up', Date.now());\n     }\n}\nif (oldPayload !== msg.payload) {\n     flow.set('OldPayload', msg.payload);\n     return msg;\n}\n\n\n\n\n\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 3900,
+        "wires": [
+            [
+                "171bf7c254f076ad"
+            ]
+        ]
+    },
+    {
+        "id": "e8e1c6d9e8e283f9",
+        "type": "inject",
+        "z": "2e9072eeb23d4182",
+        "name": "Once a time string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 197.1990966796875,
+        "y": 3846.335205078125,
+        "wires": [
+            [
+                "e4e102e965b0b371"
+            ]
+        ]
+    },
+    {
+        "id": "e4e102e965b0b371",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "init Kontex",
+        "func": "flow.set('Stamp1Down', Date.now());\nflow.set('Stamp1Up', Date.now());\nflow.set('Duration1Down', Date.now());\nflow.set('Duration1Up', Date.now());\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 452.398193359375,
+        "y": 3846.67041015625,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb852f9fd1da30c2",
+        "type": "file",
+        "z": "2e9072eeb23d4182",
+        "name": "Log write file",
+        "filename": "~/.node-red/context/Log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1130,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a05ea8b17625abd2",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "JalausielWindAlarmToFileCSV",
+        "func": "// alarm\nvar x = Number(flow.get('BV_WindAlarm'));\nvar xOld = Number(flow.get('BV_WindAlarmOld'));\n\nif (x === 0) {\n  msg.payload = global.get('date') + \" \" + global.get('time') + \",\" + \"Jalausie,\" + \"Windschutz,\" + \"Normal\"\n};\nif (x === 1 ) {\n  msg.payload = global.get('date') + \" \" + global.get('time') + \",\" + \"Jalausie,\" +\"Windschutz,\" +  \"Alarm\"   \n};\n\nif (xOld + x === 1) {\n  flow.set('BV_WindAlarmOld', x);\n  return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 620,
+        "wires": [
+            [
+                "bb852f9fd1da30c2"
+            ]
+        ]
+    },
+    {
+        "id": "13f6083f826db6e2",
+        "type": "file",
+        "z": "2e9072eeb23d4182",
+        "name": "Log write file",
+        "filename": "~/.node-red/context/Log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1110,
+        "y": 1520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fc97ff74ef0e90d8",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "JalausielRainAlarmToFileCSV",
+        "func": "// alarm\nvar x = Number(flow.get('BV_RainAlarm'));\nvar xOld = Number(flow.get('BV_RainAlarmOld'));\n\nif (x === 0) {\n  msg.payload = global.get('date') + \" \" + global.get('time') + \",\" + \"Jalausie,\" + \"Niederschlagschutz,\" + \"Normal\"\n};\nif (x === 1 ) {\n  msg.payload = global.get('date') + \" \" + global.get('time') + \",\" + \"Jalausie,\" +\"Niederschlagschutz,\" +  \"Alarm\"   \n};\n\nif (xOld + x === 1) {\n  flow.set('BV_RainAlarmOld', x);\n  return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 1520,
+        "wires": [
+            [
+                "13f6083f826db6e2"
+            ]
+        ]
+    },
+    {
+        "id": "ec845490e9567282",
+        "type": "inject",
+        "z": "2e9072eeb23d4182",
+        "name": "once",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "51cd46cf718293ba"
+            ]
+        ]
+    },
+    {
+        "id": "51cd46cf718293ba",
+        "type": "function",
+        "z": "2e9072eeb23d4182",
+        "name": "init flow Contex",
+        "func": "flow.set('BV_RainAlarmOld',0);\nflow.set('BV_WindAlarmOld',0);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0faea48d96f4c02",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Sonnensegel",
+        "info": "",
+        "x": 80,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "50d8483095888e38",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Windgeschwindigkeit",
+        "info": "",
+        "x": 120,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a6a73e82b0181280",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Flow BV_WindAlarm",
+        "info": "",
+        "x": 370,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "50f5ee918991517e",
+        "type": "inject",
+        "z": "e6e3b345539f4e42",
+        "name": "10s string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 130,
+        "y": 800,
+        "wires": [
+            [
+                "d67f3ecbce749c03",
+                "837036232445977d"
+            ]
+        ]
+    },
+    {
+        "id": "d67f3ecbce749c03",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "AI_windSpeed",
+        "func": "msg.payload = Number(global.get('AV_WindMax'));\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 700,
+        "wires": [
+            [
+                "cd8ecf2c8296c8cb"
+            ]
+        ]
+    },
+    {
+        "id": "4aed7ef9f98a4208",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "BV_WindMeasureActive",
+        "func": "flow.set('BV_WindMeasureActive', msg.payload, 'file');\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "837036232445977d",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "Calculate BV_WindAlarn",
+        "func": "var x = 0; \nvar active = Number(flow.get('BV_WindMeasureActive','file'));\nif (active === 1 && Number(global.get('AV_WindMax')) <= Number(flow.get('AI_speedHighLimit' ))){\n   x = 0; \n}\nif (active === 1 && Number(global.get('AV_WindMax')) >= Number(flow.get('AI_speedHighLimit' ))){\n   x = 1; \n}\nelse {\n   x = 0; \n}\n\nif (x === 1){\n    msg.payload ='<font size = 16><font color = red>' + 'Alarm'; \n    global.set('BV_WindAlarm2', 1, 'file');  \n}\nif (x === 0) {\n    msg.payload ='<font size = 16><font color = green>' + 'Kein Alarm'; \n    global.set('BV_WindAlarm2', 0, 'file');\n}\nif (active === 0) {\n    msg.payload ='Funktion nicht aktiv!';  \n    global.set('BV_WindAlarm2', 0, 'file');  \n}\nflow.set('BV_WindAlarm', x,'file');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 800,
+        "wires": [
+            [
+                "2f387269937c19db",
+                "793ef8a1d9f0cb02"
+            ]
+        ]
+    },
+    {
+        "id": "b3e953879f40b717",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Sonnensegel",
+        "info": "",
+        "x": 80,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "1972aea787478a65",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Niederschlag",
+        "info": "",
+        "x": 90,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "cfc77682ecdc2c06",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "AV_RegenwahrscheinlichkeitLimit",
+        "func": "let x = msg.payload;\nflow.set('AV_RegenwahrscheinlichkeitLimit', x,'file');\nmsg.payload = x + \" %\";\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "529d59f40357d617",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Flow BV_RainAlarm",
+        "info": "",
+        "x": 270,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "09f8f080c772364b",
+        "type": "inject",
+        "z": "e6e3b345539f4e42",
+        "name": "10s string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 123,
+        "y": 1386,
+        "wires": [
+            [
+                "f6169c4ce22f753e",
+                "d136aa8f30287608",
+                "e21c8afdcc56c43b"
+            ]
+        ]
+    },
+    {
+        "id": "f6169c4ce22f753e",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "AI_Regenwahrscheinlichkeit",
+        "func": "msg.payload = Number(global.get('AI_Regenwahrscheinlichkeit'));\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 1300,
+        "wires": [
+            [
+                "8982c17a73e95a64"
+            ]
+        ]
+    },
+    {
+        "id": "d136aa8f30287608",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "rain",
+        "func": "var rain = Number(global.get('DI_Rain'));\nif (rain == 1) {\n  msg.payload = \"Regen\" ;\n} \nelse {\n  msg.payload = \"Kein Regen\" ;\n}\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 1240,
+        "wires": [
+            [
+                "edcb461cd4ae1714"
+            ]
+        ]
+    },
+    {
+        "id": "e21c8afdcc56c43b",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "Calculate BV_RainAlarm",
+        "func": "var rain = Number(global.get('DI_Rain'));\nvar active = Number(flow.get('BV_RainActive'));\nvar x = 0;\n\n// rain alarm\nif (active === 1 && (Number(global.get('AI_Regenwahrscheinlichkeit')) >= Number(flow.get('AV_RegenwahrscheinlichkeitLimit')) || rain === 1)) \n{\n    x = 1;\n    msg.payload = '<font size = 16><font color = red>' + 'Alarm';\n}\n// no rain alarm\nif (active === 1 && Number(global.get('AI_Regenwahrscheinlichkeit')) < Number(flow.get('AV_RegenwahrscheinlichkeitLimit')) && rain === 0) {\n    x = 0;\n   msg.payload ='<font size = 16><font color = green>' + 'Kein Alarm';   \n}\n// not active\nif (active === 0) {\n    x = 0;\n    msg.payload ='Funktion nicht aktiv!';     \n}\nflow.set('BV_RainAlarm', x);\nglobal.set('BV_RainAlarm2', x);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1380,
+        "wires": [
+            [
+                "5368f29622449ef0",
+                "e61fa3029656adf9"
+            ]
+        ]
+    },
+    {
+        "id": "ae795ac591a95e2d",
+        "type": "ui_slider",
+        "z": "e6e3b345539f4e42",
+        "name": "Grenzwert",
+        "label": "Grenzwert in %",
+        "tooltip": "Grenzwert Regenwahrscheinlichkeit",
+        "group": "7931605bd60b47a1",
+        "order": "4",
+        "width": "",
+        "height": "",
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "topicType": "str",
+        "min": 0,
+        "max": "100",
+        "step": "5",
+        "className": "",
+        "x": 1050,
+        "y": 1080,
+        "wires": [
+            [
+                "cfc77682ecdc2c06",
+                "4a65d6ddd16f5114"
+            ]
+        ]
+    },
+    {
+        "id": "2f387269937c19db",
+        "type": "ui_text",
+        "z": "e6e3b345539f4e42",
+        "group": "922b78cb649e46cb",
+        "order": 4,
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 910,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "5368f29622449ef0",
+        "type": "ui_text",
+        "z": "e6e3b345539f4e42",
+        "group": "7931605bd60b47a1",
+        "order": "6",
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 890,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "edcb461cd4ae1714",
+        "type": "ui_text",
+        "z": "e6e3b345539f4e42",
+        "group": "7931605bd60b47a1",
+        "order": "2",
+        "width": "",
+        "height": "",
+        "name": "Regen",
+        "label": "Regen",
+        "format": "{{msg.payload}}",
+        "layout": "",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 870,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "cd8ecf2c8296c8cb",
+        "type": "ui_gauge",
+        "z": "e6e3b345539f4e42",
+        "name": "Windgeschwindigkeit",
+        "group": "922b78cb649e46cb",
+        "order": 2,
+        "width": "",
+        "height": "",
+        "gtype": "gage",
+        "title": "Maximale Windböe innerhalb der letzten Stunde",
+        "label": "",
+        "format": "{{value}}km/h",
+        "min": "0.0",
+        "max": "70",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1020,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "8982c17a73e95a64",
+        "type": "ui_gauge",
+        "z": "e6e3b345539f4e42",
+        "name": "Regenwahrscheinlichkeit",
+        "group": "7931605bd60b47a1",
+        "order": "3",
+        "width": "",
+        "height": "",
+        "gtype": "gage",
+        "title": "Regenwahrscheinlichkeit",
+        "label": "",
+        "format": "{{value}} %",
+        "min": "0.0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 910,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "84f868fcbfcfad94",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "AI_speedHighLimit",
+        "func": "flow.set('AI_speedHighLimit', msg.payload, 'file');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5479980243b601c7",
+        "type": "file",
+        "z": "e6e3b345539f4e42",
+        "name": "AI_speedHighLimit write file",
+        "filename": "~/.node-red/context/Sonnensegel/AI_speedHighLimit.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1300,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d353b9a2edfd553",
+        "type": "file in",
+        "z": "e6e3b345539f4e42",
+        "name": "AI_speedHighLimit read file",
+        "filename": "~/.node-red/context/Sonnensegel/AI_speedHighLimit.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 480,
+        "y": 300,
+        "wires": [
+            [
+                "b54e99e045d24e59"
+            ]
+        ]
+    },
+    {
+        "id": "7188c0c4069d0f27",
+        "type": "file in",
+        "z": "e6e3b345539f4e42",
+        "name": "BV_WindMeasureActive read file",
+        "filename": "~/.node-red/context/Sonnensegel/BV_WindMeasureActive.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 440,
+        "y": 220,
+        "wires": [
+            [
+                "cbcdfac1ed0ae561"
+            ]
+        ]
+    },
+    {
+        "id": "f300ce405eec4b04",
+        "type": "catch",
+        "z": "e6e3b345539f4e42",
+        "name": "read file catches",
+        "scope": [
+            "5479980243b601c7",
+            "3d353b9a2edfd553",
+            "7188c0c4069d0f27",
+            "60811b2b96ded187",
+            "c1e3c68dd634204c",
+            "b51cba9f85e99905",
+            "50bfbcaf32487693",
+            "4a65d6ddd16f5114",
+            "ff5723977e285c6e",
+            "f3262e064a129dd4",
+            "63712dc4e7b6f9f2",
+            "a162db6c25aec528",
+            "3d20ea9263a3c8f2",
+            "e4edfa2b20bda18e",
+            "1969959927c1122d",
+            "c1058247c7f22095"
+        ],
+        "uncaught": false,
+        "x": 260,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60811b2b96ded187",
+        "type": "file",
+        "z": "e6e3b345539f4e42",
+        "name": "BV_WindMeasureActive write file",
+        "filename": "~/.node-red/context/Sonnensegel/BV_WindMeasureActive.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1320,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1e3c68dd634204c",
+        "type": "file in",
+        "z": "e6e3b345539f4e42",
+        "name": "BV_RainActive read file",
+        "filename": "~/.node-red/context/Sonnensegel/BV_RainActive.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 510,
+        "y": 1000,
+        "wires": [
+            [
+                "f2bfb5d92b835808"
+            ]
+        ]
+    },
+    {
+        "id": "b51cba9f85e99905",
+        "type": "file",
+        "z": "e6e3b345539f4e42",
+        "name": "BV_RainActive write file",
+        "filename": "~/.node-red/context/Sonnensegel/BV_RainActive.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1310,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "50bfbcaf32487693",
+        "type": "file in",
+        "z": "e6e3b345539f4e42",
+        "name": "AV_RegenwahrscheinlichkeitLimit read file",
+        "filename": "~/.node-red/context/Sonnensegel/AV_RegenwahrscheinlichkeitLimit.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 570,
+        "y": 1080,
+        "wires": [
+            [
+                "9c9ec176db29e0dd"
+            ]
+        ]
+    },
+    {
+        "id": "4a65d6ddd16f5114",
+        "type": "file",
+        "z": "e6e3b345539f4e42",
+        "name": "AV_RegenwahrscheinlichkeitLimit write file",
+        "filename": "~/.node-red/context/Sonnensegel/AV_RegenwahrscheinlichkeitLimit.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1430,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ec1559d8c67cc6fd",
+        "type": "ui_slider",
+        "z": "e6e3b345539f4e42",
+        "name": "AI_speedHighLimit",
+        "label": "Grenzwert in km/h",
+        "tooltip": "Grenzwert Windgeschwindigkeit",
+        "group": "922b78cb649e46cb",
+        "order": 3,
+        "width": "",
+        "height": "",
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "topicType": "str",
+        "min": 0,
+        "max": "70",
+        "step": "5",
+        "className": "",
+        "x": 990,
+        "y": 300,
+        "wires": [
+            [
+                "5479980243b601c7",
+                "84f868fcbfcfad94"
+            ]
+        ]
+    },
+    {
+        "id": "cf8cdc48ecedc4f0",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "BV_RainActive",
+        "func": "flow.set('BV_RainActive', msg.payload, 'file');\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ddab49a8688381e",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Sonnensegel",
+        "info": "",
+        "x": 140,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "c73181daa7b4b9e2",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Zeitprogramm",
+        "info": "",
+        "x": 150,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "cf583d040105023d",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Flow BV_Schedule",
+        "info": "",
+        "x": 430,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "ca507ca5ba270ed0",
+        "type": "ui_dropdown",
+        "z": "e6e3b345539f4e42",
+        "name": "",
+        "label": "Windschutz",
+        "tooltip": "Windschutz",
+        "place": "Select option",
+        "group": "922b78cb649e46cb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "nicht aktiv",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "aktiv",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 950,
+        "y": 220,
+        "wires": [
+            [
+                "60811b2b96ded187",
+                "4aed7ef9f98a4208"
+            ]
+        ]
+    },
+    {
+        "id": "32799668b8ac5c7c",
+        "type": "ui_dropdown",
+        "z": "e6e3b345539f4e42",
+        "name": "",
+        "label": "Niederschlagschutz",
+        "tooltip": "Niederschlagschutz",
+        "place": "Select option",
+        "group": "7931605bd60b47a1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "nicht aktiv",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "aktiv",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 1010,
+        "y": 1000,
+        "wires": [
+            [
+                "cf8cdc48ecedc4f0",
+                "b51cba9f85e99905"
+            ]
+        ]
+    },
+    {
+        "id": "5b7731382bd9090d",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "google.maps 48.6429777,9.004596",
+        "info": "https://www.google.de/maps/place/Annaweg+9,+71088+Holzgerlingen/@48.6429777,9.004596,19",
+        "x": 540,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "ff5723977e285c6e",
+        "type": "file in",
+        "z": "e6e3b345539f4e42",
+        "name": "BV_ScheduleActive read file",
+        "filename": "~/.node-red/context/Sonnensegel/BV_ScheduleActive.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 420,
+        "y": 1720,
+        "wires": [
+            [
+                "25b287ecfa3a88de"
+            ]
+        ]
+    },
+    {
+        "id": "f3262e064a129dd4",
+        "type": "file",
+        "z": "e6e3b345539f4e42",
+        "name": "BV_ScheduleActive write file",
+        "filename": "~/.node-red/context/Sonnensegel/BV_ScheduleActive.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1300,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f66fef171697129b",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "BV_ScheduleActive",
+        "func": "flow.set('BV_ScheduleActive', msg.payload, 'file');\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39c666c981ac0b98",
+        "type": "ui_dropdown",
+        "z": "e6e3b345539f4e42",
+        "name": "",
+        "label": "Zeitprogramm",
+        "tooltip": "Zeitprogramm",
+        "place": "Select option",
+        "group": "54566316ec606040",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "nicht aktiv",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "aktiv",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 980,
+        "y": 1720,
+        "wires": [
+            [
+                "f66fef171697129b",
+                "f3262e064a129dd4"
+            ]
+        ]
+    },
+    {
+        "id": "b54e99e045d24e59",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "String to number",
+        "func": "flow.set('AI_speedHighLimit', Number(msg.payload), 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 300,
+        "wires": [
+            [
+                "ec1559d8c67cc6fd"
+            ]
+        ]
+    },
+    {
+        "id": "cbcdfac1ed0ae561",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "String to number",
+        "func": "flow.set('BV_WindMeasureActive', Number(msg.payload), 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 220,
+        "wires": [
+            [
+                "ca507ca5ba270ed0"
+            ]
+        ]
+    },
+    {
+        "id": "f2bfb5d92b835808",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "String to number",
+        "func": "flow.set('BV_RainActive', Number(msg.payload), 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 1000,
+        "wires": [
+            [
+                "32799668b8ac5c7c"
+            ]
+        ]
+    },
+    {
+        "id": "9c9ec176db29e0dd",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "String to number",
+        "func": "let x = Number(msg.payload);\nflow.set('AV_RegenwahrscheinlichkeitLimit', x, 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1080,
+        "wires": [
+            [
+                "ae795ac591a95e2d"
+            ]
+        ]
+    },
+    {
+        "id": "25b287ecfa3a88de",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "String to number",
+        "func": "flow.set('BV_ScheduleActive', Number(msg.payload), 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 1720,
+        "wires": [
+            [
+                "39c666c981ac0b98"
+            ]
+        ]
+    },
+    {
+        "id": "b3b81f3d55bd5b56",
+        "type": "inject",
+        "z": "e6e3b345539f4e42",
+        "name": "Once a time string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "7188c0c4069d0f27",
+                "3d353b9a2edfd553"
+            ]
+        ]
+    },
+    {
+        "id": "66c14cbdc7979c12",
+        "type": "inject",
+        "z": "e6e3b345539f4e42",
+        "name": "Once a time string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1040,
+        "wires": [
+            [
+                "c1e3c68dd634204c",
+                "50bfbcaf32487693"
+            ]
+        ]
+    },
+    {
+        "id": "79590f928d2ed2cd",
+        "type": "inject",
+        "z": "e6e3b345539f4e42",
+        "name": "Once a timestamp",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1720,
+        "wires": [
+            [
+                "ff5723977e285c6e"
+            ]
+        ]
+    },
+    {
+        "id": "a50533073d951a4f",
+        "type": "inject",
+        "z": "e6e3b345539f4e42",
+        "name": "10s string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 1980,
+        "wires": [
+            [
+                "e5ab5bc2de81452c"
+            ]
+        ]
+    },
+    {
+        "id": "e5ab5bc2de81452c",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "Calculate' BV_Schedule",
+        "func": "var y = 0;\nvar x = Number(flow.get('BO_ScheduleOutDown', 'file'));\nvar active = Number(flow.get('BV_ScheduleActive','file'));\n\n// Schedule calcuculate\nif (x == 1 && active === 1) {\n    y = 1;\n    msg.payload ='<font size = 16><font color = blue>' + 'Unten';    \n} \nif (x == 0 && active === 1) {\n    msg.payload ='<font size = 16><font color = blue>' + 'Oben'; \n} \n// not active\nif (active === 0) {\n    msg.payload ='Funktion nicht aktiv!'; \n}\nflow.set('BV_Schedule', y, 'file');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1980,
+        "wires": [
+            [
+                "8e559c2b652808b0"
+            ]
+        ]
+    },
+    {
+        "id": "8e559c2b652808b0",
+        "type": "ui_text",
+        "z": "e6e3b345539f4e42",
+        "group": "54566316ec606040",
+        "order": "6",
+        "width": "",
+        "height": "",
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 770,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "514c0c96435d8cb9",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Sonnensegel",
+        "info": "",
+        "x": 100,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "1ed44fe4d319e55e",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Sonnenstand",
+        "info": "",
+        "x": 110,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "c70f0a5d9dd068b1",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Flow BV_Sun",
+        "info": "",
+        "x": 370,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "6e43452afe4e3125",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "Sunrise",
+        "func": "msg.payload = '<font color= blue>' + global.get('Sunrise');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 3000,
+        "wires": [
+            [
+                "d4d85f2f396b97f4"
+            ]
+        ]
+    },
+    {
+        "id": "0ec6b5cd8d4c2f08",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "solar_noon",
+        "func": "msg.payload = '<font color= blue>' + global.get('solar_noon');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 3060,
+        "wires": [
+            [
+                "79c1d55573c53fd6"
+            ]
+        ]
+    },
+    {
+        "id": "7f5735b49ebf635f",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "Sunset",
+        "func": "msg.payload = '<font color= blue>' + global.get('Sunset');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 3120,
+        "wires": [
+            [
+                "dcac2cd4128fe888"
+            ]
+        ]
+    },
+    {
+        "id": "d4d85f2f396b97f4",
+        "type": "ui_text",
+        "z": "e6e3b345539f4e42",
+        "group": "d44f1d1e25036908",
+        "order": 3,
+        "width": "",
+        "height": "",
+        "name": "Sunrise",
+        "label": "Sonnenaufgang",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1100,
+        "y": 3000,
+        "wires": []
+    },
+    {
+        "id": "79c1d55573c53fd6",
+        "type": "ui_text",
+        "z": "e6e3b345539f4e42",
+        "group": "d44f1d1e25036908",
+        "order": 4,
+        "width": "",
+        "height": "",
+        "name": "solar_noon",
+        "label": "Sonnenhöchststand",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1110,
+        "y": 3060,
+        "wires": []
+    },
+    {
+        "id": "dcac2cd4128fe888",
+        "type": "ui_text",
+        "z": "e6e3b345539f4e42",
+        "group": "d44f1d1e25036908",
+        "order": 5,
+        "width": "",
+        "height": "",
+        "name": "sunset",
+        "label": "Sonnenuntergang",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1110,
+        "y": 3120,
+        "wires": []
+    },
+    {
+        "id": "7dae54d69221f910",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "timeShort",
+        "func": "msg.payload = '<font color= blue>' + global.get('timeShort');\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 2900,
+        "wires": [
+            [
+                "9d75de7f8be4f03a"
+            ]
+        ]
+    },
+    {
+        "id": "9d75de7f8be4f03a",
+        "type": "ui_text",
+        "z": "e6e3b345539f4e42",
+        "group": "d44f1d1e25036908",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "timeShort",
+        "label": "Uhrzeit",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1100,
+        "y": 2900,
+        "wires": []
+    },
+    {
+        "id": "5164d6099290efce",
+        "type": "inject",
+        "z": "e6e3b345539f4e42",
+        "name": "30s string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 170,
+        "y": 2900,
+        "wires": [
+            [
+                "7dae54d69221f910",
+                "6e43452afe4e3125",
+                "0ec6b5cd8d4c2f08",
+                "7f5735b49ebf635f"
+            ]
+        ]
+    },
+    {
+        "id": "e3abb7da3cac3903",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Sonnensegel",
+        "info": "",
+        "x": 120,
+        "y": 3560,
+        "wires": []
+    },
+    {
+        "id": "7479a64ac7f82bc8",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Motor",
+        "info": "",
+        "x": 110,
+        "y": 3600,
+        "wires": []
+    },
+    {
+        "id": "47949e463f8ec20f",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "y104:0 DO_Channel2Down",
+        "info": "",
+        "x": 550,
+        "y": 3540,
+        "wires": []
+    },
+    {
+        "id": "5fca672c680ddc35",
+        "type": "inject",
+        "z": "e6e3b345539f4e42",
+        "name": "2s string",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "empty",
+        "payloadType": "str",
+        "x": 140,
+        "y": 3760,
+        "wires": [
+            [
+                "f156748035df19b9"
+            ]
+        ]
+    },
+    {
+        "id": "3b261d79bcf71a8a",
+        "type": "link out",
+        "z": "e6e3b345539f4e42",
+        "name": "y102",
+        "mode": "link",
+        "links": [
+            "3f3f07f1b8821f46",
+            "55eae88563746e35"
+        ],
+        "x": 655,
+        "y": 3760,
+        "wires": []
+    },
+    {
+        "id": "0d979a6bf7c9eb6f",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "y103:1 DO_Channel2Up",
+        "info": "",
+        "x": 550,
+        "y": 3500,
+        "wires": []
+    },
+    {
+        "id": "f2b885f2d3e692b6",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "repeat alarm",
+        "info": "",
+        "x": 510,
+        "y": 3580,
+        "wires": []
+    },
+    {
+        "id": "204a55c23f1f757d",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "### This scenario is permanent and requires a file to read an write to ###",
+        "info": "",
+        "x": 560,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "864fb5609bee1857",
+        "type": "file",
+        "z": "e6e3b345539f4e42",
+        "name": "Schedule write",
+        "filename": "~/.node-red/context/Sonnensegel/Schedule.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 980,
+        "y": 1820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97bc46e152ab716e",
+        "type": "inject",
+        "z": "e6e3b345539f4e42",
+        "name": "FireAfterReboot",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 1840,
+        "wires": [
+            [
+                "4d91e21c576f4026"
+            ]
+        ]
+    },
+    {
+        "id": "4d91e21c576f4026",
+        "type": "file in",
+        "z": "e6e3b345539f4e42",
+        "name": "Schedule read",
+        "filename": "~/.node-red/context/Sonnensegel/Schedule.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 540,
+        "y": 1840,
+        "wires": [
+            [
+                "317447c64e4f8fd3"
+            ]
+        ]
+    },
+    {
+        "id": "317447c64e4f8fd3",
+        "type": "ui_time_scheduler",
+        "z": "e6e3b345539f4e42",
+        "group": "54566316ec606040",
+        "name": "Zeitprogramm",
+        "startDay": "1",
+        "refresh": 60,
+        "devices": [
+            "Sonnensegel"
+        ],
+        "singleOff": false,
+        "onlySendChange": false,
+        "customPayload": false,
+        "eventMode": false,
+        "eventOptions": [],
+        "sendTopic": false,
+        "lat": "48.6429777",
+        "lon": "9.00459619",
+        "customContextStore": "",
+        "outputs": 2,
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "x": 760,
+        "y": 1840,
+        "wires": [
+            [
+                "864fb5609bee1857"
+            ],
+            [
+                "8f76cf58264d83a9"
+            ]
+        ]
+    },
+    {
+        "id": "de48a7da4a451b31",
+        "type": "comment",
+        "z": "e6e3b345539f4e42",
+        "name": "Remote Controll is in Controllino -programm",
+        "info": "",
+        "x": 610,
+        "y": 3640,
+        "wires": []
+    },
+    {
+        "id": "f156748035df19b9",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "y103/y104 Up and Down",
+        "func": "// y103->Up\n// y104 -> Down\nvar oldPayload = flow.get('OldPayload');\nvar order = 0;\n\n// alarm\nvar alarm1 = Number(flow.get('BV_RainAlarm'));\nvar alarm2 = Number(flow.get('BV_WindAlarm'));\n\n// schedule  function\nvar x = Number(flow.get('BV_Schedule'));\n\n// Down\nif ( x === 1 && alarm1 == 0 && alarm2 == 0 ) {\n     order = 1;\n}\nelse{\n//Up\n     order = 0;\n}\n\nvar Stamp1Down = 0;\nvar Duration1Down = 0;\nvar Stamp1Up = 0;\nvar Duration1Up = 0;\nvar time1 = 10000; // ms\nvar time2 = 70000; // ms\nvar time3 = 7200000; // ms 2 hours\n\n\nif(order === 1)          // Down\n{\n     flow.set('Stamp1Up', Date.now());\n     // wait 10s\n     Stamp1Down = flow.get('Stamp1Down');\n     Duration1Down = Date.now() - Stamp1Down; \n     flow.set('Duration1Down', Duration1Down);\n\n     if (Duration1Down < time1){\n          msg.payload = \"y103:0\";\n     }\n     if (Duration1Down < time2 && Duration1Down > time1) {\n          msg.payload = \"y104:1\";\n     }\n     if (Duration1Down < time3 && Duration1Down > time2) {\n          msg.payload = \"y104:0\";\n     }\n}\n\nif (order === 0)       // Up\n{\n     flow.set('Stamp1Down', Date.now());\n     //wait 10s\n     Stamp1Up = Number(flow.get('Stamp1Up'));\n     Duration1Up = Date.now() - Stamp1Up;\n     flow.set('Duration1Up', Duration1Up);\n     if (Duration1Up < time1) {\n          msg.payload = \"y104:0\";\n     }\n     if (Duration1Up < time2 && Duration1Up > time1) {\n          msg.payload = \"y103:1\";\n     }\n     // wait 60s Motorlaufzeit\n     if (Duration1Up < time3 && Duration1Up > time2 ) {\n          msg.payload = \"y103:0\";\n          \n     }\n     // wait 1h repeat alarm\n     if (Duration1Up > time3 &&(alarm1 == 1 || alarm2 == 1)) {\n       flow.set('Stamp1Down', Date.now());  \n       flow.set('Stamp1Up', Date.now());\n     }\n}\nif (oldPayload !== msg.payload) {\n     flow.set('OldPayload', msg.payload);\n     return msg;\n}\n\n\n\n\n\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 3760,
+        "wires": [
+            [
+                "3b261d79bcf71a8a"
+            ]
+        ]
+    },
+    {
+        "id": "8f76cf58264d83a9",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "BO_ScheduleOutDown",
+        "func": "\nif (msg.payload) {\n    flow.set('BO_ScheduleOutDown', 1,'file');\n}\nelse {\n     flow.set('BO_ScheduleOutDown', 0,'file');\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 1920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c59d3911bc7035b",
+        "type": "inject",
+        "z": "e6e3b345539f4e42",
+        "name": "Once a time string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 150,
+        "y": 3700,
+        "wires": [
+            [
+                "fc4eca4e4e130da1"
+            ]
+        ]
+    },
+    {
+        "id": "fc4eca4e4e130da1",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "init Kontex",
+        "func": "flow.set('Stamp1Down', Date.now());\nflow.set('Stamp1Up', Date.now());\nflow.set('Duration1Down', Date.now());\nflow.set('Duration1Up', Date.now());\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 425.1990966796875,
+        "y": 3700.335205078125,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "793ef8a1d9f0cb02",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "SonnensegelWindAlarmToFileCSV",
+        "func": "// alarm\nvar x = Number(flow.get('BV_WindAlarm'));\nvar xOld = Number(flow.get('BV_WindAlarmOld'));\n\nif (x < 1) {\n  msg.payload = global.get('date') + \" \" + global.get('time') + \",\" + \"Sonnensegel,\" + \"Windschutz,\" + \"Normal\"\n};\nif (x > 0 ) {\n  msg.payload = global.get('date') + \" \" + global.get('time') + \",\" + \"Sonnensegel,\" +\"Windschutz,\" +  \"Alarm\"   \n};\n\nif (xOld + x === 1) {\n  flow.set('BV_WindAlarmOld', x);\n  return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 860,
+        "wires": [
+            [
+                "65fefda5fae66c6f"
+            ]
+        ]
+    },
+    {
+        "id": "65fefda5fae66c6f",
+        "type": "file",
+        "z": "e6e3b345539f4e42",
+        "name": "Log write file",
+        "filename": "~/.node-red/context/Log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1130,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e61fa3029656adf9",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "SonnensegelRainAlarmToFileCSV",
+        "func": "// alarm\nvar x = Number(flow.get('BV_RainAlarm'));\nvar xOld = Number(flow.get('BV_RainAlarmOld'));\n\nif (x < 1) {\n  msg.payload = global.get('date') + \" \" + global.get('time') + \",\" + \"Sonnensegel,\" + \"Niederschlagschutz,\" + \"Normal\"\n};\nif (x > 0 ) {\n  msg.payload = global.get('date') + \" \" + global.get('time') + \",\" + \"Sonnensegel,\" +\"Niederschlagschutz,\" +  \"Alarm\"   \n};\n\nif (xOld + x === 1) {\n  flow.set('BV_RainAlarmOld', x);\n  return msg;\n}",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1460,
+        "wires": [
+            [
+                "a56e1fcf1bae9e40"
+            ]
+        ]
+    },
+    {
+        "id": "a56e1fcf1bae9e40",
+        "type": "file",
+        "z": "e6e3b345539f4e42",
+        "name": "Log write file",
+        "filename": "~/.node-red/context/Log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1110,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f1af708e8fda157",
+        "type": "function",
+        "z": "e6e3b345539f4e42",
+        "name": "init flow Contex",
+        "func": "flow.set('BV_RainAlarmOld',0);\nflow.set('BV_WindAlarmOld',0);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2809be6db0f82065",
+        "type": "inject",
+        "z": "e6e3b345539f4e42",
+        "name": "once",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 70,
+        "y": 140,
+        "wires": [
+            [
+                "0f1af708e8fda157"
+            ]
+        ]
+    },
+    {
+        "id": "563e817f171e2876",
+        "type": "ui_button",
+        "z": "cc9ee972c72288e8",
+        "name": "",
+        "group": "ef88dac95fd5e728",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Datei log.txt löschen",
+        "tooltip": "Datei log.txt löschen",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 93.00001525878906,
+        "y": 968.0000219345093,
+        "wires": [
+            [
+                "a3eb02329869545d"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "cc8f40d99f28a994",
+        "type": "file",
+        "z": "cc9ee972c72288e8",
+        "name": "Delete Log file",
+        "filename": "~/.node-red/context/Log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 498.00001525878906,
+        "y": 968.0000219345093,
+        "wires": [
+            [
+                "ecd15d0f95e7996b"
+            ]
+        ]
+    },
+    {
+        "id": "92d7b314550d36f7",
+        "type": "function",
+        "z": "cc9ee972c72288e8",
+        "name": "Collect Refresh",
+        "func": "msg.payload = \"text\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 680,
+        "wires": [
+            [
+                "17a6aa3359a4bc0b"
+            ]
+        ]
+    },
+    {
+        "id": "17a6aa3359a4bc0b",
+        "type": "file in",
+        "z": "cc9ee972c72288e8",
+        "name": "",
+        "filename": "~/.node-red/context/Log.txt",
+        "filenameType": "str",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": true,
+        "x": 820,
+        "y": 680,
+        "wires": [
+            [
+                "5c51551fcc6ffdf3"
+            ]
+        ]
+    },
+    {
+        "id": "5c51551fcc6ffdf3",
+        "type": "csv",
+        "z": "cc9ee972c72288e8",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 1070,
+        "y": 680,
+        "wires": [
+            [
+                "b780961cf0ddde50"
+            ]
+        ]
+    },
+    {
+        "id": "0c2dab70865a8272",
+        "type": "function",
+        "z": "cc9ee972c72288e8",
+        "name": "Delete Log file",
+        "func": "msg.payload = global.get('date') + \" \" + global.get('time') + \",\" + \"Allgemein,\" + \"Datei log.txt,\" + \"Gelöscht\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 938.0000152587891,
+        "y": 968.0000219345093,
+        "wires": [
+            [
+                "25a70e690af2ce8e"
+            ]
+        ]
+    },
+    {
+        "id": "b780961cf0ddde50",
+        "type": "ui_table",
+        "z": "cc9ee972c72288e8",
+        "group": "161e9e42bd0768fa",
+        "name": "",
+        "order": 0,
+        "width": "12",
+        "height": "20",
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 1290,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a3eb02329869545d",
+        "type": "function",
+        "z": "cc9ee972c72288e8",
+        "name": "Header",
+        "func": "msg.payload = \"Datum,Anlage,Gerät,Zustand\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 258.00001525878906,
+        "y": 968.0000219345093,
+        "wires": [
+            [
+                "cc8f40d99f28a994"
+            ]
+        ]
+    },
+    {
+        "id": "25a70e690af2ce8e",
+        "type": "file",
+        "z": "cc9ee972c72288e8",
+        "name": "Log write file",
+        "filename": "~/.node-red/context/Log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1128.000015258789,
+        "y": 968.0000219345093,
+        "wires": [
+            [
+                "92d7b314550d36f7"
+            ]
+        ]
+    },
+    {
+        "id": "ecd15d0f95e7996b",
+        "type": "trigger",
+        "z": "cc9ee972c72288e8",
+        "name": "2 Sekunden",
+        "op1": "",
+        "op2": "",
+        "op1type": "nul",
+        "op2type": "pay",
+        "duration": "2",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 728.0000152587891,
+        "y": 968.0000219345093,
+        "wires": [
+            [
+                "0c2dab70865a8272"
+            ]
+        ]
+    },
+    {
+        "id": "3bea9b16f34368a4",
+        "type": "catch",
+        "z": "cc9ee972c72288e8",
+        "name": "read file catches",
+        "scope": [
+            "4856bd2b53bb53fc",
+            "240e319be33d4b15",
+            "852f049efbc4a761",
+            "65ed2acb1d06d43d",
+            "372d1ff2e5ed8402",
+            "0101157946d270bc",
+            "cc8f40d99f28a994",
+            "19c271e08bdb3aef",
+            "44b1eced2be2019c",
+            "3229a7e6b8ded100",
+            "4f6af63f88c21c2a",
+            "e61fa3029656adf9",
+            "712728a98e200929",
+            "e8c2e5d12440328b",
+            "3c6e0eeef129f6f0",
+            "696d0f785de498ac",
+            "fa92c9c2746155df",
+            "d3674ec9d7249b85",
+            "226999023a5ba14b",
+            "fec22645ce2a4261",
+            "84a28dd39e3df429",
+            "c5a076542c2bb835",
+            "6be0b11bd5d7de9f",
+            "a56e1fcf1bae9e40",
+            "78158e98a64109e4",
+            "17a6aa3359a4bc0b",
+            "25a70e690af2ce8e"
+        ],
+        "uncaught": false,
+        "x": 140,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d8e0f3221e579f3",
+        "type": "file in",
+        "z": "cc9ee972c72288e8",
+        "name": "Testbetrieb",
+        "filename": "~/.node-red/context/Testbetrieb.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "057434320f3b9fbc"
+            ]
+        ]
+    },
+    {
+        "id": "7200f92e90d94ac0",
+        "type": "file",
+        "z": "cc9ee972c72288e8",
+        "name": "Testbetrieb",
+        "filename": "~/.node-red/context/Testbetrieb.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1010,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "362b153312b522b1",
+        "type": "function",
+        "z": "cc9ee972c72288e8",
+        "name": "Testbetrieb",
+        "func": "global.set('Testbetrieb', msg.payload);\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "11228fd828547818",
+        "type": "ui_dropdown",
+        "z": "cc9ee972c72288e8",
+        "name": "",
+        "label": "Programm",
+        "tooltip": "Bei Testbetrieb wird die Hardware nicht angesteuert",
+        "place": "Select option",
+        "group": "ef88dac95fd5e728",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Normalbetrieb",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Testbetrieb",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 730,
+        "y": 240,
+        "wires": [
+            [
+                "362b153312b522b1",
+                "7200f92e90d94ac0",
+                "d590e9d16a31b562"
+            ]
+        ]
+    },
+    {
+        "id": "057434320f3b9fbc",
+        "type": "function",
+        "z": "cc9ee972c72288e8",
+        "name": "String to number",
+        "func": "global.set('Testbetrieb', Number(msg.payload), 'file');\nmsg.payload = Number(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 240,
+        "wires": [
+            [
+                "11228fd828547818"
+            ]
+        ]
+    },
+    {
+        "id": "d21737ec305565a4",
+        "type": "inject",
+        "z": "cc9ee972c72288e8",
+        "name": "Once a time string",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "2d8e0f3221e579f3"
+            ]
+        ]
+    },
+    {
+        "id": "d590e9d16a31b562",
+        "type": "function",
+        "z": "cc9ee972c72288e8",
+        "name": "Testbetrieb",
+        "func": "var x = global.get('Testbetrieb');\n\nif (x === 0) {\n    msg.payload = global.get('date') + \" \" + global.get('time') + \",\" + \"Allgemein,\" + \"Programm,\" + \"Normalbetrieb\"\n};\nif (x === 1) {\n    msg.payload = global.get('date') + \" \" + global.get('time') + \",\" + \"Allgemein,\" + \"Programm,\" + \"Testbetrieb\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 360,
+        "wires": [
+            [
+                "b6f9ecf0b32a2070"
+            ]
+        ]
+    },
+    {
+        "id": "b6f9ecf0b32a2070",
+        "type": "file",
+        "z": "cc9ee972c72288e8",
+        "name": "Log write file",
+        "filename": "~/.node-red/context/Log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1070,
+        "y": 360,
+        "wires": [
+            [
+                "92d7b314550d36f7"
+            ]
+        ]
+    },
+    {
+        "id": "1d9458e30e8dfd55",
+        "type": "link in",
+        "z": "cc9ee972c72288e8",
+        "name": "link in 1",
+        "links": [
+            "92a0e7d36be7a467",
+            "126b3a5aaeec0289"
+        ],
+        "x": 185,
+        "y": 680,
+        "wires": [
+            [
+                "92d7b314550d36f7"
+            ]
+        ]
+    },
+    {
+        "id": "35d75892fa6f0f0e",
+        "type": "ui_button",
+        "z": "cc9ee972c72288e8",
+        "name": "",
+        "group": "ef88dac95fd5e728",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Datei log.txt aktualisieren",
+        "tooltip": "Datei log.txt aktualisieren",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 95,
+        "y": 920,
+        "wires": [
+            [
+                "92d7b314550d36f7"
+            ]
+        ],
+        "l": false
+    }
+]
